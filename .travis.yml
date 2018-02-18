@@ -1,14 +1,15 @@
+language: cpp
+compiler: gcc
 matrix:
-  # works on Trusty
-  - os: linux
-    addons:
-      apt:
-        sources:
-          - llvm-toolchain-trusty-4.0
+    - os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
           packages:
-            - clang-4.0
-            env:
-              - MATRIX_EVAL="CC=clang-4.0 && CXX=clang++-4.0"
+            - g++-5
+      env:
+         - MATRIX_EVAL="CC=gcc-5 && CXX=g++-5"
 before_install:
   - eval "$(MATRIX_EVAL)"
 
