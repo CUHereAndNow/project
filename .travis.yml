@@ -1,3 +1,4 @@
+sudo: true
 language: cpp
 compiler: gcc
 matrix:
@@ -11,6 +12,9 @@ matrix:
       env:
          - MATRIX_EVAL="CC=gcc-5 && CXX=g++-5"
 before_install:
+  - sudo add-apt-repository --yes ppa:beineri/opt-qt-5.10.1-trusty
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq qt510base
   - eval "$(MATRIX_EVAL)"
 
 script:
