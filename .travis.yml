@@ -11,8 +11,11 @@ before_install:
   - sudo apt-get update -qq
 
 install:
-  - sudo apt-get install -qq qt510base g++-5
+  - sudo apt-get install -qq g++-5
+  - sudo apt-get install -qq qt510-meta-full
+  - sudo apt-get install -qq qt510-tools
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 90
+  - sudo update-alternatives --install /usr/bin/qmake qmake /opt/qt510/bin/qmake
   - qmake -version
   - g++ --version
 
