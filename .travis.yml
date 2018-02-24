@@ -13,8 +13,8 @@ before_install:
 install:
   - sudo apt-get install -qq qt510base g++-5
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 90
-  - which qmake
-  - which g++
+  - qmake -version
+  - g++ --version
 
 script:
   - qmake 
