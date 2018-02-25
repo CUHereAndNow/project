@@ -15,7 +15,7 @@ install:
   - sudo apt-get install -qq qt510base
   - sudo apt-get install -qq qt510tools
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 90
-  - sudo update-alternatives --install /usr/bin/qmake qmake /opt/qt510/bin/qmake
+  - sudo update-alternatives --install /usr/bin/qmake qmake /opt/qt510/bin/qmake 90
   - qmake -version
   - g++ --version
 
