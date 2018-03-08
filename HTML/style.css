@@ -19,31 +19,31 @@ input {
 .one:hover {
     background-color: white; 
     color: black; 
-    border: 2px solid #8e44ad;
+    border: 2px solid ##CFB87C;
 }
 
 .one {
-    background-color: #8e44ad;
+    background-color: ##CFB87C;
     color: white;
 }
 .two:hover {
     background-color: white; 
     color: black; 
-    border: 2px solid #8e44ad;
+    border: 2px solid ##CFB87C;
 }
 
 .two {
-    background-color: #8e44ad;
+    background-color: ##CFB87C;
     color: white;
 }
 .three:hover {
     background-color: white; 
     color: black; 
-    border: 2px solid #8e44ad;
+    border: 2px solid ##CFB87C;
 }
 
 .three {
-    background-color: #8e44ad;
+    background-color: ##CFB87C;
     color: white;
 }
 .four:hover {
@@ -53,13 +53,13 @@ input {
 }
 
 .four {
-    background-color: #8e44ad;
+    background-color: ##CFB87C;
     color: white;
 }
 .five:hover {
     background-color: white; 
     color: black; 
-    border: 2px solid #8e44ad;
+    border: 2px solid ##CFB87C;
 }
 
 .five {
