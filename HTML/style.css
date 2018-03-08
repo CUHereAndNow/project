@@ -19,60 +19,60 @@ input {
 .one:hover {
     background-color: white; 
     color: black; 
-    border: 2px solid ##CFB87C;
+    border: 2px solid #CFB87C;
 }
 
 .one {
-    background-color: ##CFB87C;
+    background-color: #CFB87C;
     color: white;
 }
 .two:hover {
     background-color: white; 
     color: black; 
-    border: 2px solid ##CFB87C;
+    border: 2px solid #CFB87C;
 }
 
 .two {
-    background-color: ##CFB87C;
+    background-color: #CFB87C;
     color: white;
 }
 .three:hover {
     background-color: white; 
     color: black; 
-    border: 2px solid ##CFB87C;
+    border: 2px solid #CFB87C;
 }
 
 .three {
-    background-color: ##CFB87C;
+    background-color: #CFB87C;
     color: white;
 }
 .four:hover {
     background-color: white; 
     color: black; 
-    border: 2px solid #8e44ad;
+    border: 2px solid #CFB87C;
 }
 
 .four {
-    background-color: ##CFB87C;
+    background-color: #CFB87C;
     color: white;
 }
 .five:hover {
     background-color: white; 
     color: black; 
-    border: 2px solid ##CFB87C;
+    border: 2px solid #CFB87C;
 }
 
 .five {
-    background-color: #8e44ad;
+    background-color: #CFB87C;
     color: white;
 }
 .six:hover {
     background-color: white; 
     color: black; 
-    border: 2px solid #8e44ad;
+    border: 2px solid #CFB87C;
 }
 
 .six {
-    background-color: #8e44ad;
+    background-color: #CFB87C;
     color: white;
 }
