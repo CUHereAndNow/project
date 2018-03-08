@@ -3,9 +3,12 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <title>Here and Now Resources</title>
     <link rel="stylesheet" href="style.css">
-    <h1><b>Welcome to the Resource Center!</b></h1>
+    <h1 style="text-align: center;"><b>Welcome to the Resource Center!</b></h1>
     <br>
     <br>
     <style>
@@ -93,8 +96,22 @@
     </style>
   </head>
   <body style="background:#565A5C; background: radial-gradient(#565A5C, #CFB87C);">
+  <p align="center" style="color: white;">
+    <button type="button" class="btn btn-default one" style="float: auto;">Aden Hall</button>
+    <button type="button" class="btn btn-default two" style="float: auto;">Crossman Hall</button>
+    <button type="button" class="btn btn-default three" style="float: auto;">Brackett Hall</button>
+    <button type="button" class="btn btn-default four" style="float: auto;">Cockerell Hall</button>
+    <button type="button" class="btn btn-default five" style="float: auto;">Farrand Hall</button>
+    <button type="button" class="btn btn-default six" style="float: auto;">Hallet Hall</button>
+
+  </p>
+  
+    <br>
+    <br>
     <input id="pac-input" class="controls" type="text" placeholder="Search Box" style="text-align: center;">
     <div id="map"></div>
+
+
     <script>
       // This example adds a search box to a map, using the Google Place Autocomplete
       // feature. People can enter geographical searches. The search box will return a
@@ -174,5 +191,11 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA79GgNng_7Qj2_64YA5ycbhhKX6H4KA-k&libraries=places&callback=initAutocomplete"
          async defer></script>
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
