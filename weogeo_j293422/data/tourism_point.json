@@ -1,0 +1,236 @@
+{
+	"name" : "tourism_point",
+	"type" : "FeatureCollection",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.267760577698, 40.008486020995434 ]
+			},
+			"properties" : {
+				"id" : 118847,
+				"osm_id" : 593993851,
+				"z_order" : 0,
+				"tourism" : "artwork",
+				"name" : "Monarch of the Plains",
+				"name:en" : "",
+				"amenity" : "",
+				"building" : "",
+				"historic" : "",
+				"access" : "",
+				"fee" : "",
+				"ele" : "",
+				"brand" : "",
+				"tower:type" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26852022958262, 40.004052832406956 ]
+			},
+			"properties" : {
+				"id" : 448971,
+				"osm_id" : 2144234605,
+				"z_order" : 0,
+				"tourism" : "information",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"building" : "",
+				"historic" : "",
+				"access" : "",
+				"fee" : "",
+				"ele" : "",
+				"brand" : "",
+				"tower:type" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26942153563087, 40.0066024397143 ]
+			},
+			"properties" : {
+				"id" : 448972,
+				"osm_id" : 2144234617,
+				"z_order" : 0,
+				"tourism" : "information",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"building" : "",
+				"historic" : "",
+				"access" : "",
+				"fee" : "",
+				"ele" : "",
+				"brand" : "",
+				"tower:type" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.261936747554, 40.00735873883764 ]
+			},
+			"properties" : {
+				"id" : 535353,
+				"osm_id" : 2490071181,
+				"z_order" : 0,
+				"tourism" : "artwork",
+				"name" : "Obelisk Fountain",
+				"name:en" : "",
+				"amenity" : "",
+				"building" : "",
+				"historic" : "",
+				"access" : "",
+				"fee" : "",
+				"ele" : "",
+				"brand" : "",
+				"tower:type" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26157221858499, 40.00724449349738 ]
+			},
+			"properties" : {
+				"id" : 535354,
+				"osm_id" : 2490073994,
+				"z_order" : 0,
+				"tourism" : "artwork",
+				"name" : "Sculpture",
+				"name:en" : "",
+				"amenity" : "",
+				"building" : "",
+				"historic" : "",
+				"access" : "",
+				"fee" : "",
+				"ele" : "",
+				"brand" : "",
+				"tower:type" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26546058346719, 40.01054813681418 ]
+			},
+			"properties" : {
+				"id" : 1256970,
+				"osm_id" : 5180792588,
+				"z_order" : 0,
+				"tourism" : "artwork",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"building" : "",
+				"historic" : "",
+				"access" : "",
+				"fee" : "",
+				"ele" : "",
+				"brand" : "",
+				"tower:type" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27225227197063, 40.00789803048781 ]
+			},
+			"properties" : {
+				"id" : 1394713,
+				"osm_id" : 2703445592,
+				"z_order" : 0,
+				"tourism" : "information",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"building" : "",
+				"historic" : "",
+				"access" : "",
+				"fee" : "",
+				"ele" : "",
+				"brand" : "",
+				"tower:type" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27343914945999, 40.00911642393311 ]
+			},
+			"properties" : {
+				"id" : 1394715,
+				"osm_id" : 5251281692,
+				"z_order" : 0,
+				"tourism" : "artwork",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"building" : "",
+				"historic" : "",
+				"access" : "",
+				"fee" : "",
+				"ele" : "",
+				"brand" : "",
+				"tower:type" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26625644517351, 40.00828234074834 ]
+			},
+			"properties" : {
+				"id" : 1381585,
+				"osm_id" : 5468400695,
+				"z_order" : 0,
+				"tourism" : "information",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"building" : "",
+				"historic" : "",
+				"access" : "",
+				"fee" : "",
+				"ele" : "",
+				"brand" : "",
+				"tower:type" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27108224210663, 40.00805711901006 ]
+			},
+			"properties" : {
+				"id" : 1394714,
+				"osm_id" : 5251281382,
+				"z_order" : 0,
+				"tourism" : "artwork",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"building" : "",
+				"historic" : "",
+				"access" : "",
+				"fee" : "",
+				"ele" : "",
+				"brand" : "",
+				"tower:type" : ""
+			}
+		}
+	]
+}

@@ -1,0 +1,111 @@
+{
+	"name" : "route_point",
+	"type" : "FeatureCollection",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26987273347869, 40.00590825049346 ]
+			},
+			"properties" : {
+				"id" : 1328919096,
+				"osm_id" : -2837636,
+				"member" : 2219538924,
+				"index" : 4,
+				"role" : "",
+				"type" : 0,
+				"relname" : "Buff Bus",
+				"name" : "",
+				"ref" : "BUFF",
+				"network" : "",
+				"z_order" : 0,
+				"operator" : "UCB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26148052056428, 40.00786399996093 ]
+			},
+			"properties" : {
+				"id" : 1328919094,
+				"osm_id" : -2837636,
+				"member" : 558822308,
+				"index" : 2,
+				"role" : "",
+				"type" : 0,
+				"relname" : "Buff Bus",
+				"name" : "",
+				"ref" : "BUFF",
+				"network" : "",
+				"z_order" : 0,
+				"operator" : "UCB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26902582598204, 40.00819106182277 ]
+			},
+			"properties" : {
+				"id" : 1328919097,
+				"osm_id" : -2837636,
+				"member" : 558822609,
+				"index" : 5,
+				"role" : "",
+				"type" : 0,
+				"relname" : "Buff Bus",
+				"name" : "",
+				"ref" : "BUFF",
+				"network" : "",
+				"z_order" : 0,
+				"operator" : "UCB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26456933570275, 40.00813389724311 ]
+			},
+			"properties" : {
+				"id" : 1328919098,
+				"osm_id" : -2837636,
+				"member" : 2219538930,
+				"index" : 6,
+				"role" : "",
+				"type" : 0,
+				"relname" : "Buff Bus",
+				"name" : "",
+				"ref" : "BUFF",
+				"network" : "",
+				"z_order" : 0,
+				"operator" : "UCB"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26592561145526, 40.0040090788724 ]
+			},
+			"properties" : {
+				"id" : 1328919095,
+				"osm_id" : -2837636,
+				"member" : 2219538922,
+				"index" : 3,
+				"role" : "",
+				"type" : 0,
+				"relname" : "Buff Bus",
+				"name" : "",
+				"ref" : "BUFF",
+				"network" : "",
+				"z_order" : 0,
+				"operator" : "UCB"
+			}
+		}
+	]
+}

@@ -1,0 +1,688 @@
+{
+	"name" : "public_transport_point",
+	"type" : "FeatureCollection",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.268574041401, 40.00399298561831 ]
+			},
+			"properties" : {
+				"id" : 1150182,
+				"osm_id" : 4719873797,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Broadway & Regent Dr",
+				"name:en" : "",
+				"ref" : "12585",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26762504232369, 40.00837294912162 ]
+			},
+			"properties" : {
+				"id" : 1150222,
+				"osm_id" : 4719873830,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Colorado Ave & 18th St",
+				"name:en" : "",
+				"ref" : "25126",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26169903678002, 40.00830991720977 ]
+			},
+			"properties" : {
+				"id" : 1150310,
+				"osm_id" : 4719875716,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Colorado Ave & 26th St",
+				"name:en" : "",
+				"ref" : "13040",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26637907241694, 40.003959960919815 ]
+			},
+			"properties" : {
+				"id" : 1150609,
+				"osm_id" : 4719880017,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Regent Dr & Broadway",
+				"name:en" : "",
+				"ref" : "23668",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.2689950643974, 40.0081879605186 ]
+			},
+			"properties" : {
+				"id" : 1150013,
+				"osm_id" : 4719871514,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Colorado Ave & 18th St",
+				"name:en" : "",
+				"ref" : "25940",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26145805706378, 40.00779593890715 ]
+			},
+			"properties" : {
+				"id" : 1150074,
+				"osm_id" : 4719871576,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Regent Dr & Colorado Ave",
+				"name:en" : "",
+				"ref" : "23666",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26305304941866, 40.00812199494061 ]
+			},
+			"properties" : {
+				"id" : 1150287,
+				"osm_id" : 4719875693,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Colorado Ave & Folsom St (Farside)",
+				"name:en" : "",
+				"ref" : "26057",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26967601021121, 40.00476797638572 ]
+			},
+			"properties" : {
+				"id" : 1150360,
+				"osm_id" : 4719875765,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "18th St & Broadway",
+				"name:en" : "",
+				"ref" : "34165",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26500402120132, 40.00818896634698 ]
+			},
+			"properties" : {
+				"id" : 1150423,
+				"osm_id" : 4719876624,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Colorado Ave & Folsom St",
+				"name:en" : "",
+				"ref" : "34603",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26494501260298, 40.008183937205075 ]
+			},
+			"properties" : {
+				"id" : 1150473,
+				"osm_id" : 4719876681,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Colorado Ave & Folsom St",
+				"name:en" : "",
+				"ref" : "13044",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26004000668487, 40.00810699133393 ]
+			},
+			"properties" : {
+				"id" : 1150594,
+				"osm_id" : 4719880002,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Colorado Ave & 28th St Nearside",
+				"name:en" : "",
+				"ref" : "25464",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27307604541451, 40.006481991765696 ]
+			},
+			"properties" : {
+				"id" : 1150750,
+				"osm_id" : 4719880163,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Broadway & Euclid Ave",
+				"name:en" : "",
+				"ref" : "12432",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26540400562077, 40.00829893691662 ]
+			},
+			"properties" : {
+				"id" : 1149959,
+				"osm_id" : 4719871263,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Colorado Ave & Folsom St",
+				"name:en" : "",
+				"ref" : "25124",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26964407516012, 40.006858925951406 ]
+			},
+			"properties" : {
+				"id" : 1150054,
+				"osm_id" : 4719871559,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "18th St & Euclid Ave",
+				"name:en" : "",
+				"ref" : "25127",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.2672220404191, 40.00317298403084 ]
+			},
+			"properties" : {
+				"id" : 1150178,
+				"osm_id" : 4719872286,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Broadway & 20th St",
+				"name:en" : "",
+				"ref" : "12434",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27238101800337, 40.005662996006606 ]
+			},
+			"properties" : {
+				"id" : 1150270,
+				"osm_id" : 4719873879,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "16th St & Broadway",
+				"name:en" : "",
+				"ref" : "33138",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.2593850447709, 40.00830991720977 ]
+			},
+			"properties" : {
+				"id" : 1150514,
+				"osm_id" : 4719878224,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Colorado Ave & 28th St Farside",
+				"name:en" : "",
+				"ref" : "13042",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27507202801722, 40.00708699753676 ]
+			},
+			"properties" : {
+				"id" : 1150598,
+				"osm_id" : 4719880001,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "14th St & College Ave",
+				"name:en" : "",
+				"ref" : "33136",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.2640480651444, 40.00884895740285 ]
+			},
+			"properties" : {
+				"id" : 1150622,
+				"osm_id" : 4719880027,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Folsom St & Colorado Ave (Fs)",
+				"name:en" : "",
+				"ref" : "33139",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26149007593389, 40.00606197459766 ]
+			},
+			"properties" : {
+				"id" : 1150680,
+				"osm_id" : 4719880089,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Regent Dr & Engineering Dr",
+				"name:en" : "",
+				"ref" : "26009",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27018001404903, 40.00589693492418 ]
+			},
+			"properties" : {
+				"id" : 1150726,
+				"osm_id" : 4719880133,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Euclid Ave & 18th St",
+				"name:en" : "",
+				"ref" : "33814",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26528406058635, 40.00830094857338 ]
+			},
+			"properties" : {
+				"id" : 1150788,
+				"osm_id" : 4719880696,
+				"z_order" : 0,
+				"public_transport" : "platform",
+				"name" : "Colorado Ave & Folsom St",
+				"name:en" : "",
+				"ref" : "34598",
+				"route_ref" : "",
+				"operator" : "",
+				"network" : "Regional Transportation District",
+				"train" : "",
+				"subway" : "",
+				"monorail" : "",
+				"tram" : "",
+				"bus" : "yes",
+				"trolleybus" : "",
+				"aerialway" : "",
+				"ferry" : "",
+				"shelter" : "",
+				"bench" : "",
+				"covered" : "",
+				"area" : ""
+			}
+		}
+	]
+}

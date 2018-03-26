@@ -1,0 +1,618 @@
+{
+	"name" : "emergency_point",
+	"type" : "FeatureCollection",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26942958225791, 40.00655298648556 ]
+			},
+			"properties" : {
+				"id" : 141076,
+				"osm_id" : 2144234615,
+				"z_order" : 0,
+				"emergency" : "fire_hydrant",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26695021529919, 40.00656044637938 ]
+			},
+			"properties" : {
+				"id" : 143770,
+				"osm_id" : 2177626559,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26672273044706, 40.00549384920055 ]
+			},
+			"properties" : {
+				"id" : 143771,
+				"osm_id" : 2177626531,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26450521414347, 40.008103722391695 ]
+			},
+			"properties" : {
+				"id" : 143772,
+				"osm_id" : 2177626567,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26963896219918, 40.00834076261344 ]
+			},
+			"properties" : {
+				"id" : 143773,
+				"osm_id" : 2177626580,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26688114841703, 40.008146721554965 ]
+			},
+			"properties" : {
+				"id" : 143774,
+				"osm_id" : 2177626570,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26098674264833, 40.00724457731641 ]
+			},
+			"properties" : {
+				"id" : 143775,
+				"osm_id" : 2177626564,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26388377984219, 40.00627923352792 ]
+			},
+			"properties" : {
+				"id" : 143776,
+				"osm_id" : 2177626539,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26901023564214, 40.00815233743009 ]
+			},
+			"properties" : {
+				"id" : 143777,
+				"osm_id" : 2177626574,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27207994004138, 40.00625283053293 ]
+			},
+			"properties" : {
+				"id" : 144082,
+				"osm_id" : 2179440582,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27438848381342, 40.00765252454386 ]
+			},
+			"properties" : {
+				"id" : 144084,
+				"osm_id" : 2179440587,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27283070710862, 40.00836599214199 ]
+			},
+			"properties" : {
+				"id" : 144085,
+				"osm_id" : 2179440591,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26582603444555, 40.011185580550546 ]
+			},
+			"properties" : {
+				"id" : 144087,
+				"osm_id" : 2179440605,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26770710115575, 40.010683336912365 ]
+			},
+			"properties" : {
+				"id" : 144088,
+				"osm_id" : 2179440603,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27170300585566, 40.01021017847822 ]
+			},
+			"properties" : {
+				"id" : 144089,
+				"osm_id" : 2179440599,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27508183484393, 40.00990507720272 ]
+			},
+			"properties" : {
+				"id" : 144090,
+				"osm_id" : 2179440597,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.2615529402077, 40.00172366915311 ]
+			},
+			"properties" : {
+				"id" : 150981,
+				"osm_id" : 2247069865,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26106251505301, 40.00318572452366 ]
+			},
+			"properties" : {
+				"id" : 150982,
+				"osm_id" : 2247069866,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.2638426246976, 40.00378897009506 ]
+			},
+			"properties" : {
+				"id" : 150983,
+				"osm_id" : 2247069867,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26402283561583, 40.00168896807398 ]
+			},
+			"properties" : {
+				"id" : 150984,
+				"osm_id" : 2247069864,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26521490988517, 40.006705872399436 ]
+			},
+			"properties" : {
+				"id" : 201426,
+				"osm_id" : 2501146392,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26497451690216, 40.00666463343583 ]
+			},
+			"properties" : {
+				"id" : 201427,
+				"osm_id" : 2501146393,
+				"z_order" : 0,
+				"emergency" : "phone",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26433497769001, 40.00478566220144 ]
+			},
+			"properties" : {
+				"id" : 203558,
+				"osm_id" : 2508901222,
+				"z_order" : 0,
+				"emergency" : "fire_hydrant",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26440471512441, 40.00596767818695 ]
+			},
+			"properties" : {
+				"id" : 203560,
+				"osm_id" : 2508901223,
+				"z_order" : 0,
+				"emergency" : "fire_hydrant",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26403767158445, 40.007099989486676 ]
+			},
+			"properties" : {
+				"id" : 203562,
+				"osm_id" : 2508901224,
+				"z_order" : 0,
+				"emergency" : "fire_hydrant",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.25912721742928, 40.00839633463147 ]
+			},
+			"properties" : {
+				"id" : 204833,
+				"osm_id" : 2514423936,
+				"z_order" : 0,
+				"emergency" : "fire_hydrant",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.2640296249574, 40.00838853946152 ]
+			},
+			"properties" : {
+				"id" : 204834,
+				"osm_id" : 2514423953,
+				"z_order" : 0,
+				"emergency" : "fire_hydrant",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26395452310497, 40.00800573794359 ]
+			},
+			"properties" : {
+				"id" : 204835,
+				"osm_id" : 2514423971,
+				"z_order" : 0,
+				"emergency" : "fire_hydrant",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26403348063286, 40.00746451845569 ]
+			},
+			"properties" : {
+				"id" : 204836,
+				"osm_id" : 2514423992,
+				"z_order" : 0,
+				"emergency" : "fire_hydrant",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26220874031199, 40.00639314359205 ]
+			},
+			"properties" : {
+				"id" : 205111,
+				"osm_id" : 2515110040,
+				"z_order" : 0,
+				"emergency" : "fire_hydrant",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.2599442015316, 40.0064614561029 ]
+			},
+			"properties" : {
+				"id" : 205112,
+				"osm_id" : 2515110037,
+				"z_order" : 0,
+				"emergency" : "fire_hydrant",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26294416849643, 40.00550902044532 ]
+			},
+			"properties" : {
+				"id" : 205113,
+				"osm_id" : 2515110039,
+				"z_order" : 0,
+				"emergency" : "fire_hydrant",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26250872862657, 40.004823464584746 ]
+			},
+			"properties" : {
+				"id" : 205114,
+				"osm_id" : 2515110038,
+				"z_order" : 0,
+				"emergency" : "fire_hydrant",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26218795319213, 40.00736318124632 ]
+			},
+			"properties" : {
+				"id" : 245340,
+				"osm_id" : 2703448398,
+				"z_order" : 0,
+				"emergency" : "fire_hydrant",
+				"ref" : "",
+				"name" : "",
+				"name:en" : "",
+				"amenity" : "",
+				"operator" : ""
+			}
+		}
+	]
+}

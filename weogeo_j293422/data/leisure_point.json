@@ -1,0 +1,156 @@
+{
+	"name" : "leisure_point",
+	"type" : "FeatureCollection",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27078862403846, 40.01024596920479 ]
+			},
+			"properties" : {
+				"id" : 347727,
+				"osm_id" : 4365728860,
+				"z_order" : 0,
+				"leisure" : "picnic_table",
+				"name" : "",
+				"name:en" : "",
+				"type" : "",
+				"brand" : "",
+				"access" : "",
+				"harbour" : "",
+				"water" : "",
+				"sport" : "",
+				"barrier" : "",
+				"ele" : "",
+				"building" : "",
+				"surface" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27008873512348, 40.008640499470914 ]
+			},
+			"properties" : {
+				"id" : 471939,
+				"osm_id" : 5229621524,
+				"z_order" : 0,
+				"leisure" : "picnic_table",
+				"name" : "",
+				"name:en" : "",
+				"type" : "",
+				"brand" : "",
+				"access" : "",
+				"harbour" : "",
+				"water" : "",
+				"sport" : "",
+				"barrier" : "",
+				"ele" : "",
+				"building" : "",
+				"surface" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.2708201399944, 40.01024647211898 ]
+			},
+			"properties" : {
+				"id" : 347728,
+				"osm_id" : 4365728861,
+				"z_order" : 0,
+				"leisure" : "picnic_table",
+				"name" : "",
+				"name:en" : "",
+				"type" : "",
+				"brand" : "",
+				"access" : "",
+				"harbour" : "",
+				"water" : "",
+				"sport" : "",
+				"barrier" : "",
+				"ele" : "",
+				"building" : "",
+				"surface" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.2708476326368, 40.010272623656874 ]
+			},
+			"properties" : {
+				"id" : 347729,
+				"osm_id" : 4365728865,
+				"z_order" : 0,
+				"leisure" : "picnic_table",
+				"name" : "",
+				"name:en" : "",
+				"type" : "",
+				"brand" : "",
+				"access" : "",
+				"harbour" : "",
+				"water" : "",
+				"sport" : "",
+				"barrier" : "",
+				"ele" : "",
+				"building" : "",
+				"surface" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.2707287772498, 40.01055408796543 ]
+			},
+			"properties" : {
+				"id" : 347731,
+				"osm_id" : 4365791062,
+				"z_order" : 0,
+				"leisure" : "picnic_table",
+				"name" : "",
+				"name:en" : "",
+				"type" : "",
+				"brand" : "",
+				"access" : "",
+				"harbour" : "",
+				"water" : "",
+				"sport" : "",
+				"barrier" : "",
+				"ele" : "",
+				"building" : "",
+				"surface" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27021781643235, 40.010914174525766 ]
+			},
+			"properties" : {
+				"id" : 474464,
+				"osm_id" : 5248777968,
+				"z_order" : 0,
+				"leisure" : "park",
+				"name" : "pipe town",
+				"name:en" : "",
+				"type" : "",
+				"brand" : "",
+				"access" : "",
+				"harbour" : "",
+				"water" : "",
+				"sport" : "",
+				"barrier" : "",
+				"ele" : "",
+				"building" : "",
+				"surface" : ""
+			}
+		}
+	]
+}

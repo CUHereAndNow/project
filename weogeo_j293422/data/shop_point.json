@@ -1,0 +1,181 @@
+{
+	"name" : "shop_point",
+	"type" : "FeatureCollection",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27551191029578, 40.007188921479326 ]
+			},
+			"properties" : {
+				"id" : 875320,
+				"osm_id" : 2704305236,
+				"z_order" : 0,
+				"shop" : "optician",
+				"building" : "",
+				"name" : "College Optical",
+				"name:en" : "",
+				"addr:housenumber" : "1350",
+				"addr:housename" : "",
+				"addr:street" : "College Avenue",
+				"addr:city" : "",
+				"addr:state" : "",
+				"addr:postcode" : "",
+				"addr:place" : "",
+				"addr:country" : "",
+				"addr:hamlet" : "",
+				"addr:suburb" : "",
+				"addr:subdistrict" : "",
+				"addr:district" : "",
+				"addr:province" : "",
+				"website" : "http://www.collegeopticalboulder.com/",
+				"contact:website" : "",
+				"phone" : "",
+				"contact:phone" : "(303)444-3092",
+				"opening_hours" : "Mo-Fr 09:00-18:00; Sa 09:00-16:00",
+				"brand" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26598897864325, 40.00582635929945 ]
+			},
+			"properties" : {
+				"id" : 646591,
+				"osm_id" : 2177939680,
+				"z_order" : 0,
+				"shop" : "convenience",
+				"building" : "",
+				"name" : "The Emporium",
+				"name:en" : "",
+				"addr:housenumber" : "",
+				"addr:housename" : "",
+				"addr:street" : "",
+				"addr:city" : "",
+				"addr:state" : "",
+				"addr:postcode" : "",
+				"addr:place" : "",
+				"addr:country" : "",
+				"addr:hamlet" : "",
+				"addr:suburb" : "",
+				"addr:subdistrict" : "",
+				"addr:district" : "",
+				"addr:province" : "",
+				"website" : "",
+				"contact:website" : "",
+				"phone" : "",
+				"contact:phone" : "",
+				"opening_hours" : "Mo-Fr 7:30-24:00; Sa-Su 8:00-24:00",
+				"brand" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27536715482796, 40.00719319624994 ]
+			},
+			"properties" : {
+				"id" : 875321,
+				"osm_id" : 2704307608,
+				"z_order" : 0,
+				"shop" : "hairdresser",
+				"building" : "",
+				"name" : "Silver and Gold Haircuts",
+				"name:en" : "",
+				"addr:housenumber" : "1350",
+				"addr:housename" : "",
+				"addr:street" : "College Avenue",
+				"addr:city" : "",
+				"addr:state" : "",
+				"addr:postcode" : "",
+				"addr:place" : "",
+				"addr:country" : "",
+				"addr:hamlet" : "",
+				"addr:suburb" : "",
+				"addr:subdistrict" : "",
+				"addr:district" : "",
+				"addr:province" : "",
+				"website" : "http://www.silverandgoldbarbers.com/",
+				"contact:website" : "",
+				"phone" : "",
+				"contact:phone" : "",
+				"opening_hours" : "Mo-Fr 08:00-18:00; Sa 08:00-17:00; Su 13:00-16:30",
+				"brand" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27517395195981, 40.00696093371303 ]
+			},
+			"properties" : {
+				"id" : 875322,
+				"osm_id" : 2704307613,
+				"z_order" : 0,
+				"shop" : "beauty",
+				"building" : "",
+				"name" : "Aspen Tan",
+				"name:en" : "",
+				"addr:housenumber" : "",
+				"addr:housename" : "",
+				"addr:street" : "",
+				"addr:city" : "",
+				"addr:state" : "",
+				"addr:postcode" : "",
+				"addr:place" : "",
+				"addr:country" : "",
+				"addr:hamlet" : "",
+				"addr:suburb" : "",
+				"addr:subdistrict" : "",
+				"addr:district" : "",
+				"addr:province" : "",
+				"website" : "",
+				"contact:website" : "",
+				"phone" : "",
+				"contact:phone" : "",
+				"opening_hours" : "",
+				"brand" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26373743181277, 40.00933368286337 ]
+			},
+			"properties" : {
+				"id" : 2376591,
+				"osm_id" : 5264738653,
+				"z_order" : 0,
+				"shop" : "religion",
+				"building" : "",
+				"name" : "Wesley Felloship & Community Centre",
+				"name:en" : "",
+				"addr:housenumber" : "1290",
+				"addr:housename" : "",
+				"addr:street" : "Folsom Street",
+				"addr:city" : "",
+				"addr:state" : "",
+				"addr:postcode" : "",
+				"addr:place" : "",
+				"addr:country" : "",
+				"addr:hamlet" : "",
+				"addr:suburb" : "",
+				"addr:subdistrict" : "",
+				"addr:district" : "",
+				"addr:province" : "",
+				"website" : "",
+				"contact:website" : "",
+				"phone" : "",
+				"contact:phone" : "",
+				"opening_hours" : "",
+				"brand" : ""
+			}
+		}
+	]
+}

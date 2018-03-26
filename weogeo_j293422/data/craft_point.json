@@ -1,0 +1,76 @@
+{
+	"name" : "craft_point",
+	"type" : "FeatureCollection",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27197818373685, 40.00741313738922 ]
+			},
+			"properties" : {
+				"id" : 11867,
+				"osm_id" : 2703445609,
+				"z_order" : 0,
+				"craft" : "sculpter",
+				"building" : "",
+				"name" : "",
+				"name:en" : "",
+				"addr:housenumber" : "",
+				"addr:housename" : "",
+				"addr:street" : "",
+				"addr:city" : "",
+				"addr:state" : "",
+				"addr:postcode" : "",
+				"addr:place" : "",
+				"addr:country" : "",
+				"addr:hamlet" : "",
+				"addr:suburb" : "",
+				"addr:subdistrict" : "",
+				"addr:district" : "",
+				"addr:province" : "",
+				"website" : "",
+				"contact:website" : "",
+				"phone" : "",
+				"contact:phone" : "",
+				"opening_hours" : "",
+				"brand" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.2719896669442, 40.007141479907375 ]
+			},
+			"properties" : {
+				"id" : 11868,
+				"osm_id" : 2703445610,
+				"z_order" : 0,
+				"craft" : "sculpter",
+				"building" : "",
+				"name" : "",
+				"name:en" : "",
+				"addr:housenumber" : "",
+				"addr:housename" : "",
+				"addr:street" : "",
+				"addr:city" : "",
+				"addr:state" : "",
+				"addr:postcode" : "",
+				"addr:place" : "",
+				"addr:country" : "",
+				"addr:hamlet" : "",
+				"addr:suburb" : "",
+				"addr:subdistrict" : "",
+				"addr:district" : "",
+				"addr:province" : "",
+				"website" : "",
+				"contact:website" : "",
+				"phone" : "",
+				"contact:phone" : "",
+				"opening_hours" : "",
+				"brand" : ""
+			}
+		}
+	]
+}

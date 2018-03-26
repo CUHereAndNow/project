@@ -1,0 +1,31 @@
+{
+	"name" : "barrier_polygon",
+	"type" : "FeatureCollection",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Polygon",
+				"coordinates" : [
+					[
+						[ -105.26544750769824, 40.00924223629974 ],
+						[ -105.2643518253154, 40.009250785841004 ],
+						[ -105.26434034210804, 40.008379235549 ],
+						[ -105.2654360244909, 40.0083707698268 ],
+						[ -105.26544750769824, 40.00924223629974 ]
+					]
+				]
+			},
+			"properties" : {
+				"id" : 24269,
+				"osm_id" : 46371964,
+				"z_order" : 0,
+				"barrier" : "fence",
+				"access" : "",
+				"height" : "",
+				"wheelchair" : "",
+				"operator" : ""
+			}
+		}
+	]
+}

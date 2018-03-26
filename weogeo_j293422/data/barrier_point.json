@@ -1,0 +1,176 @@
+{
+	"name" : "barrier_point",
+	"type" : "FeatureCollection",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26532337171224, 40.00742562642495 ]
+			},
+			"properties" : {
+				"id" : 2112491,
+				"osm_id" : 5246556536,
+				"z_order" : 0,
+				"barrier" : "gate",
+				"access" : "",
+				"height" : "",
+				"wheelchair" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26641352203899, 40.007356643361845 ]
+			},
+			"properties" : {
+				"id" : 879890,
+				"osm_id" : 2137932916,
+				"z_order" : 0,
+				"barrier" : "lift_gate",
+				"access" : "",
+				"height" : "",
+				"wheelchair" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26658635688243, 40.008253758458494 ]
+			},
+			"properties" : {
+				"id" : 879891,
+				"osm_id" : 2137932949,
+				"z_order" : 0,
+				"barrier" : "lift_gate",
+				"access" : "",
+				"height" : "",
+				"wheelchair" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26213556629729, 40.00747633693916 ]
+			},
+			"properties" : {
+				"id" : 1052034,
+				"osm_id" : 2490097142,
+				"z_order" : 0,
+				"barrier" : "yes",
+				"access" : "",
+				"height" : "",
+				"wheelchair" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26861704056427, 40.00494894167525 ]
+			},
+			"properties" : {
+				"id" : 29112,
+				"osm_id" : 176433392,
+				"z_order" : 0,
+				"barrier" : "lift_gate",
+				"access" : "",
+				"height" : "",
+				"wheelchair" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26822610860026, 40.005551432875365 ]
+			},
+			"properties" : {
+				"id" : 242759,
+				"osm_id" : 592641593,
+				"z_order" : 0,
+				"barrier" : "lift_gate",
+				"access" : "",
+				"height" : "",
+				"wheelchair" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27190811102632, 40.01011454096303 ]
+			},
+			"properties" : {
+				"id" : 242760,
+				"osm_id" : 592641706,
+				"z_order" : 0,
+				"barrier" : "lift_gate",
+				"access" : "",
+				"height" : "",
+				"wheelchair" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26560064506921, 40.007426045520106 ]
+			},
+			"properties" : {
+				"id" : 243044,
+				"osm_id" : 593994083,
+				"z_order" : 0,
+				"barrier" : "gate",
+				"access" : "",
+				"height" : "",
+				"wheelchair" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.27326237512206, 40.006784997565404 ]
+			},
+			"properties" : {
+				"id" : 867672,
+				"osm_id" : 2108702327,
+				"z_order" : 0,
+				"barrier" : "lift_gate",
+				"access" : "",
+				"height" : "",
+				"wheelchair" : "",
+				"operator" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -105.26523175751055, 40.007425542605915 ]
+			},
+			"properties" : {
+				"id" : 906837,
+				"osm_id" : 2199911245,
+				"z_order" : 0,
+				"barrier" : "gate",
+				"access" : "",
+				"height" : "",
+				"wheelchair" : "",
+				"operator" : ""
+			}
+		}
+	]
+}
