@@ -1,0 +1,20 @@
+CREATE TABLE leisure_point (
+	`X` FLOAT NOT NULL, 
+	`Y` FLOAT NOT NULL, 
+	id INTEGER NOT NULL, 
+	osm_id BIGINT NOT NULL, 
+	z_order INTEGER NOT NULL, 
+	leisure VARCHAR(12) NOT NULL, 
+	name VARCHAR(9), 
+	`name:en` VARCHAR(32), 
+	type VARCHAR(32), 
+	brand VARCHAR(32), 
+	access VARCHAR(32), 
+	harbour VARCHAR(32), 
+	water VARCHAR(32), 
+	sport VARCHAR(32), 
+	barrier VARCHAR(32), 
+	ele VARCHAR(32), 
+	building VARCHAR(32), 
+	surface VARCHAR(32)
+);

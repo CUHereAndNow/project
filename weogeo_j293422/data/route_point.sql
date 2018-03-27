@@ -1,0 +1,16 @@
+CREATE TABLE route_point (
+	`X` FLOAT NOT NULL, 
+	`Y` FLOAT NOT NULL, 
+	id INTEGER NOT NULL, 
+	osm_id INTEGER NOT NULL, 
+	member BIGINT NOT NULL, 
+	`index` INTEGER NOT NULL, 
+	role VARCHAR(32), 
+	type INTEGER NOT NULL, 
+	relname VARCHAR(8) NOT NULL, 
+	name VARCHAR(32), 
+	ref VARCHAR(4) NOT NULL, 
+	network VARCHAR(32), 
+	z_order INTEGER NOT NULL, 
+	operator VARCHAR(3) NOT NULL
+);
