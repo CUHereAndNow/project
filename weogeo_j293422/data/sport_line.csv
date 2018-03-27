@@ -1,0 +1,17 @@
+id,osm_id,z_order,sport,name,name:en,access,covered,ref,leisure
+335648,168647811,0,american_football,Kittredge Field,,,,,pitch
+362836,177619603,0,basketball,,,,,,pitch
+70864,46275951,0,multi,Student Recreation Center,,,,,sports_centre
+71018,46371964,0,soccer,Franklin Field,,,,,pitch
+194562,116030890,0,tennis,,,,,,pitch
+194563,116030892,0,tennis,,,,,,pitch
+194564,116030893,0,tennis,,,,,,pitch
+194565,116030895,0,tennis,,,,,,pitch
+194566,116030896,0,tennis,,,,,,pitch
+194567,116030899,0,tennis,,,,,,pitch
+194568,116030907,0,tennis,,,,,,pitch
+335649,168647812,0,soccer,Kittredge Field,,,,,pitch
+442643,206772029,0,american_football,Folsom Field,,,,,pitch
+460912,215667609,0,beachvolleyball,,,,,,pitch
+928719,408750269,0,tennis,Tennis Courts,,,,,pitch
+407820,194217258,0,volleyball,,,,,,pitch

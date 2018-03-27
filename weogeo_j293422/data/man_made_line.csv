@@ -1,0 +1,4 @@
+id,osm_id,z_order,man_made,name,name:en,building,type,ref,ele,height,tower:type,operator
+58709,46938893,0,observatory,Sommers-Bausch Observatory,,university,,,1647,,,University of Colorado Boulder
+443982,206751727,0,pumping_station,Varsity Lake Pump Station,,shed,,,,,,University of Colorado Boulder
+982270,438929266,0,flower_bed,,,,,,,,,

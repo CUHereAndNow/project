@@ -1,0 +1,11 @@
+id,osm_id,z_order,highway,name,name:en,ref,maxspeed,oneway,access,bicycle,foot,horse,motor_vehicle,motorcar,bridge,cutting,embankment,tunnel,service,toll,surface,width,construction,layer,junction,disused
+495089,119941647,0,service,,,,,,,,,,,,,,,,parking_aisle,,,,,,,
+586260,161010387,0,footway,,,,,,,,,,,,,,,,,,,,,,,
+1228946,482562383,0,pedestrian,,,,,,,,,,,,,,,,,,,,,,,
+364663,46223881,0,footway,,,,,,,,yes,,,,,,,,,,,,,,,
+717998,209852008,0,service,,,,,yes,,,,,,,,,,,parking_aisle,,,,,,,
+1228926,482557815,0,pedestrian,,,,,,,,,,,,,,,,,,,,,,,
+1788501,264632645,0,pedestrian,Observation deck,,,,,,,,,,,,,,,,,,,,,,
+1808404,482560086,0,pedestrian,,,,,,,,,,,,,,,,,,,,,,,
+1152435,438929268,0,footway,,,,,,,,,,,,,,,,,,,,,,,
+1152436,438929267,0,footway,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,5 @@
+X,Y,id,osm_id,z_order,building,building:levels,height,name,name:en,craft,office,leisure,shop,addr:housenumber,addr:housename,addr:street,addr:city,addr:state,addr:postcode,addr:place,addr:country,addr:hamlet,addr:suburb,addr:subdistrict,addr:district,addr:province,addr:interpolation,website,contact:website,phone,contact:phone,opening_hours,brand,construction,tower:type,disused
+-105.274048932915861,40.006079325137222,258690,2201917482,0,yes,,,Delta Delta Delta,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+-105.274021104997331,40.005708677378891,258691,2201917984,0,yes,,,Alpha Phi,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+-105.273453147238286,40.006230953765623,258692,2201926623,0,yes,,,Evans Scholars,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+-105.275234050205569,40.006049569380963,882632,5239392736,0,yes,,,,,,,,,1027,,14th Street,Boulder,,,,,,,,,,,,,,,,,,,
