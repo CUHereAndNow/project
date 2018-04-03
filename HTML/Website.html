@@ -23,14 +23,61 @@
 
 
 <body style="background:#565A5C; background: gray;">
-  <p align="center" style="color: white;">
-    <button type="button" class="btn btn-default one" style="float: auto;">Aden Hall</button>
-    <button type="button" class="btn btn-default two" style="float: auto;">Crossman Hall</button>
-    <button type="button" class="btn btn-default three" style="float: auto;">Brackett Hall</button>
-    <button type="button" class="btn btn-default four" style="float: auto;">Cockerell Hall</button>
-    <button type="button" class="btn btn-default five" style="float: auto;">Farrand Hall</button>
-    <button type="button" class="btn btn-default six" style="float: auto;">Hallet Hall</button>
-  </p>
+
+    <div class="conatiner1">
+      <button class="btn btn-default one" title="Computers, Whiteboards..." onclick="myFunction()">Aden Hall (A)</button>
+      <div id="Aden" class="dropdown-content">
+        <ul>8 Computers</ul>
+        <ul>Whiteboards</ul>
+        <ul>1 Printer</ul>
+        <ul>Vending Machine</ul>
+        <ul>3 Study Rooms</ul>
+        <ul>Public Phone</ul>
+        <ul>Chalkboards</ul>
+        <ul>Water Bottle Station</ul>
+        <ul>TV, Pool, Ping Pong Table</ul>
+      </div>
+
+      <button class="btn btn-default one" title="Study Room..." onclick="myFunction()">Crossman Hall (B)</button>
+      <div id="Crossman" class="dropdown-content">
+        <ul>1 Study Room</ul>
+        <ul>Pool Table</ul>
+      </div>
+
+      <button class="btn btn-default one" title="Study Rooms, Chalkboards...">Brackett Hall (C)</button>
+
+      <button class="btn btn-default one" title="Study Room...">Cockerell Hall (D)</button>
+
+      <button class="btn btn-default one" title="Whiteboards, Study Rooms...">Farrand Hall (E)</button>
+
+      <button class="btn btn-default one" title="Whiteboards, Vending Machine...">Hallet Hall (F)</button>
+
+  </div>
+
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("Aden").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.one')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+
+  </script>
 
   <br>
   <br>
@@ -46,7 +93,15 @@
       <br>
     </h4></b></p>
   </div>
+  
+  <br>
 
+  <div class="contact">
+    <p>identikey@colorado.edu</p>
+    <p>Department of Computer Science</p>
+    <p>University of Colorado Boulder</p>
+  </div>
+  
   <br>
   <br>
 
