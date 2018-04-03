@@ -38,19 +38,47 @@
         <ul>TV, Pool, Ping Pong Table</ul>
       </div>
 
-      <button class="btn btn-default one" title="Study Room..." onclick="myFunction()">Crossman Hall (B)</button>
-      <div id="Crossman" class="dropdown-content">
+      <button class="btn btn-default one" title="Study Room..." onclick="myFunction2()">Crossman Hall (B)</button>
+      <div id="Crosman" class="dropdown-content">
         <ul>1 Study Room</ul>
         <ul>Pool Table</ul>
       </div>
 
-      <button class="btn btn-default one" title="Study Rooms, Chalkboards...">Brackett Hall (C)</button>
+      <button class="btn btn-default one" title="Study Rooms, Chalkboards..." onclick="myFunction3()">Brackett Hall (C)</button>
+      <div id="Brackett" class="dropdown-content">
+        <ul>Whiteboards</ul>
+        <ul>2 Study Rooms</ul>
+        <ul>Chalkboards</ul>
+        <ul>Piano</ul>
+        <ul>Waterbottle Station</ul>
+      </div>
 
-      <button class="btn btn-default one" title="Study Room...">Cockerell Hall (D)</button>
+      <button class="btn btn-default one" title="Study Room..." onclick="myFunction4()">Cockerell Hall (D)</button>
+      <div id="Cockerell" class="dropdown-content">
+        <ul>Whiteboards</ul>
+      </div>
 
-      <button class="btn btn-default one" title="Whiteboards, Study Rooms...">Farrand Hall (E)</button>
+      <button class="btn btn-default one" title="Whiteboards, Study Rooms..." onclick="myFunction5()">Farrand Hall (E)</button>
+      <div id="Farrand" class="dropdown-content">
+        <ul>Whiteboards</ul>
+        <ul>5 Study Rooms</ul>
+        <ul>TV</ul>
+        <ul>Water Bottle Station, 8 Individual, 2 Each Floor</ul>
+        <ul>Classroom</ul>
+      </div>
 
-      <button class="btn btn-default one" title="Whiteboards, Vending Machine...">Hallet Hall (F)</button>
+      <button class="btn btn-default one" title="Whiteboards, Vending Machine..." onclick="myFunction6()">Hallet Hall (F)</button>
+      <div id="Hallet" class="dropdown-content">
+        <ul>Whiteboards</ul>
+        <ul>3 Study Rooms</ul>
+        <ul>Vending Machine</ul>
+        <ul>Public Phone</ul>
+        <ul>Ping Pong Table</ul>
+        <ul>TV</ul>
+        <ul>Ball Pit</ul>
+        <ul>Pool Table</ul>
+        <ul>Classroom</ul>
+      </div>
 
   </div>
 
@@ -59,6 +87,111 @@
     toggle between hiding and showing the dropdown content */
     function myFunction() {
         document.getElementById("Aden").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.one')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+        /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction2() {
+        document.getElementById("Crosman").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.one')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction3() {
+        document.getElementById("Brackett").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.one')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+        /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction4() {
+        document.getElementById("Cockerell").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.one')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction5() {
+        document.getElementById("Farrand").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.one')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+        /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction6() {
+        document.getElementById("Hallet").classList.toggle("show");
     }
 
     // Close the dropdown if the user clicks outside of it

@@ -68,7 +68,7 @@
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #f1f1f1;
     min-width: 160px;
     overflow: auto;
@@ -86,6 +86,5 @@
 .show {display:block;}
 
 .container1 {
-    text-align: center;
-    display: inline-block;
+    align-content: center;
 }
