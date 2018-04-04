@@ -15,7 +15,7 @@ app.get('/', function (req,res) {
 
 // This code handles the HTML form sent via GET on Submit
 // This is getting the number the user inputs in the form
-app.get('/process_get', function (req, res) {
+app.post('/process_post', function (req, res) {
 	var name = req.query.uname;
 	var pass = req.query.psw;
 	
@@ -44,16 +44,15 @@ app.get('/process_get', function (req, res) {
 		{
 			if(row && row.length )
 			{
-				console.log("same email");
-				con.end();
+				res.send("same email");
 			}
 			else
 			{
 				//If it doest not exist it adds it to the database here.
-				console.log("not the same");
+				//console.log("not the same");
 				con.query("Insert into UserProfiles (`Email_Address` , `Passwords`) Values ('" + name +  "','" + pass + "');", function (err, result) {
 					if (err) throw err;
-					console.log("1 record inserted");
+					res.send("1 record inserted");
 				});
 		
 			}
