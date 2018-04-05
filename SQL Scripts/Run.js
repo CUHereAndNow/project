@@ -86,7 +86,7 @@ app.post('/newUser_Post', function(req, res) {
 			if(row && row.length )
 			{
 				console.log("same email");
-				return res.redirect('/Website');
+				return res.redirect('/');
 				//res.send("same email");
 			}
 			else
@@ -97,7 +97,7 @@ app.post('/newUser_Post', function(req, res) {
 				con.query("Insert into UserProfiles (`Email_Address` , `Passwords`) Values ('" + name +  "','" + pass + "');", function (err, result) {
 					if (err) throw err;
 					console.log("1 record inserted");
-					res.redirect('/Website');
+					res.redirect('/');
 					//res.send("1 record inserted");
 					
 				});
@@ -109,9 +109,54 @@ app.post('/newUser_Post', function(req, res) {
 })
 
 
+app.post('/login_Post',function(req, res){
+	var name = req.body.uname;
+	var pass = req.body.psw;
+	
+	// This code sets up DB connection variables
+	var con = mysql.createConnection({
+		host: "localhost",
+		user: "root",
+		password: "Morenju1363",
+		database: "ProjectDB"
+	});
+
+	// This code connects to the database
+	con.connect(function(err) {
+		if (err) throw err;
+		console.log("Connected to the ProjectDB database!");
+	});
+		
+
+
+
+	
+	//Checking to see if the email already exists. 
+	con.query("Select Email_Address From UserProfiles Where Email_Address ='" + name + "';", function(err, row) {
+		if (err) throw err;
+		else
+		{
+			if(row && row.length )
+			{
+				//I want to return the username back to the original html form here. this just means it exists
+				console.log("Email Found");
+				res.redirect('/');
+			}
+			else
+			{
+				//return an error which states "user not found"
+				console.log("User not found");
+				res.redirect('/');
+
+		
+			}
+			
+		}
+	});
+})
+
 
 // This code leaves the web server running
 var server = app.listen(8080, function () {
 	console.log("Webserver listening at http://localhost:8080") ;
 })
-//app.listen(8080);
