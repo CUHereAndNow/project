@@ -8,7 +8,7 @@
 	<body>
 
 		<h2 align= "center">New User</h2>
-		<form action = "http://127.0.0.1:8080/process_post" method = "POST">
+		<form action = "http://127.0.0.1:8080/process_post" method = "post">
 			<div class="container">			
 				<label for="uname"><b>Enter Email Address</b></label>
 				<input type="text" placeholder="Enter Email Address" id = "uname" name="uname" required>
@@ -16,7 +16,8 @@
 				<label for="psw"><b>New Password</b></label>
 				<input type="password" placeholder="Enter Password" name="psw" required>
 		
-				<input type = "submit" id="Submit" value = "Submit" class="submit">
+				<button type = "submit" id="Submit" value = "Submit" class="submit">Submit</button>
+				<button type ="button" class ="cancelbtn"> Cancel </button>
 			</div>
 		</form>
 
