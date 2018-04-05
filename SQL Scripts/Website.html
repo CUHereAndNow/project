@@ -17,13 +17,18 @@
   <br>
   <br>
 </head>
-
-<img src="CUHere_Logo.png" style="width: 100px; height: 100px; float: left; position: absolute; left: 110px; position: absolute; top: 20px;" alt="CU Here and Now Logo"></img>
+<img src="http://i68.tinypic.com/2i1yza0.png"  style="width: 100px; height: 100px; float: left; position: absolute; left: 110px; position: absolute; top: 20px;" alt="CU Here and Now Logo"></img>
 
 
 <body style="background:#565A5C; background: gray;">
-    <button class="button" onclick="" name="Login">Log in</button>
-    <button class="button2" onclick="" name="SignUp">Sign Up</button>
+	<form action = "http://127.0.0.1:8080/Login_Get" method = "GET">
+		<button class="button" onclick="" name="Login">Log in</button>
+    </form>
+    
+    <form action = "http://127.0.0.1:8080/NewUser" method = "Get">
+		<button class="button2" onclick="" name="SignUp">Sign Up</button>
+	</form>
+	
     <div class="conatiner1">
       <button class="btn btn-default one" title="Computers, Whiteboards..." onclick="myFunction()">Aden Hall (A)</button>
       <div id="Aden" class="dropdown-content">
