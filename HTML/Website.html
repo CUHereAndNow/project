@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
 
-  <title>Here and Now Resources</title>
+  <title>Resource Center</title>
   <link rel="stylesheet" href="style.css">
 
   <div class="container">
@@ -17,20 +17,205 @@
   <br>
   <br>
 </head>
-
-
-<img src="CUHere_Logo.png" style="width: 300px; height: 300px; float: left; position: absolute; margin-left: 5%; margin-top: 5%;" alt="CU Here and Now Logo"></img>
+<img src="http://i68.tinypic.com/2i1yza0.png"  style="width: 100px; height: 100px; float: left; position: absolute; left: 110px; position: absolute; top: 20px;" alt="CU Here and Now Logo"></img>
 
 
 <body style="background:#565A5C; background: gray;">
-  <p align="center" style="color: white;">
-    <button type="button" class="btn btn-default one" style="float: auto;">Aden Hall</button>
-    <button type="button" class="btn btn-default two" style="float: auto;">Crossman Hall</button>
-    <button type="button" class="btn btn-default three" style="float: auto;">Brackett Hall</button>
-    <button type="button" class="btn btn-default four" style="float: auto;">Cockerell Hall</button>
-    <button type="button" class="btn btn-default five" style="float: auto;">Farrand Hall</button>
-    <button type="button" class="btn btn-default six" style="float: auto;">Hallet Hall</button>
-  </p>
+	<form action = "http://127.0.0.1:8080/Login_Get" method = "Get">
+		<button class="button" onclick="" name="Login">Log in</button>
+    </form>
+    
+    <form action = "http://127.0.0.1:8080/NewUser" method = "Get">
+		<button class="button2" onclick="" name="SignUp">Sign Up</button>
+	</form>
+	
+    <div class="conatiner1">
+      <button class="btn btn-default one" title="Computers, Whiteboards..." onclick="myFunction()">Aden Hall (A)</button>
+      <div id="Aden" class="dropdown-content">
+        <ul>8 Computers</ul>
+        <ul>Whiteboards</ul>
+        <ul>1 Printer</ul>
+        <ul>Vending Machine</ul>
+        <ul>3 Study Rooms</ul>
+        <ul>Public Phone</ul>
+        <ul>Chalkboards</ul>
+        <ul>Water Bottle Station</ul>
+        <ul>TV, Pool, Ping Pong Table</ul>
+      </div>
+
+      <button class="btn btn-default one" title="Study Room..." onclick="myFunction2()">Crossman Hall (B)</button>
+      <div id="Crosman" class="dropdown-content">
+        <ul>1 Study Room</ul>
+        <ul>Pool Table</ul>
+      </div>
+
+      <button class="btn btn-default one" title="Study Rooms, Chalkboards..." onclick="myFunction3()">Brackett Hall (C)</button>
+      <div id="Brackett" class="dropdown-content">
+        <ul>Whiteboards</ul>
+        <ul>2 Study Rooms</ul>
+        <ul>Chalkboards</ul>
+        <ul>Piano</ul>
+        <ul>Waterbottle Station</ul>
+      </div>
+
+      <button class="btn btn-default one" title="Study Room..." onclick="myFunction4()">Cockerell Hall (D)</button>
+      <div id="Cockerell" class="dropdown-content">
+        <ul>Whiteboards</ul>
+      </div>
+
+      <button class="btn btn-default one" title="Whiteboards, Study Rooms..." onclick="myFunction5()">Farrand Hall (E)</button>
+      <div id="Farrand" class="dropdown-content">
+        <ul>Whiteboards</ul>
+        <ul>5 Study Rooms</ul>
+        <ul>TV</ul>
+        <ul>Water Bottle Station, 8 Individual, 2 Each Floor</ul>
+        <ul>Classroom</ul>
+      </div>
+
+      <button class="btn btn-default one" title="Whiteboards, Vending Machine..." onclick="myFunction6()">Hallet Hall (F)</button>
+      <div id="Hallet" class="dropdown-content">
+        <ul>Whiteboards</ul>
+        <ul>3 Study Rooms</ul>
+        <ul>Vending Machine</ul>
+        <ul>Public Phone</ul>
+        <ul>Ping Pong Table</ul>
+        <ul>TV</ul>
+        <ul>Ball Pit</ul>
+        <ul>Pool Table</ul>
+        <ul>Classroom</ul>
+      </div>
+
+  </div>
+
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("Aden").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.one')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+        /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction2() {
+        document.getElementById("Crosman").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.one')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction3() {
+        document.getElementById("Brackett").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.one')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+        /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction4() {
+        document.getElementById("Cockerell").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.one')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction5() {
+        document.getElementById("Farrand").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.one')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+        /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction6() {
+        document.getElementById("Hallet").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.one')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+
+  </script>
 
   <br>
   <br>
@@ -46,7 +231,15 @@
       <br>
     </h4></b></p>
   </div>
+  
+  <br>
 
+  <div class="contact">
+    <p>identikey@colorado.edu</p>
+    <p>Department of Computer Science</p>
+    <p>University of Colorado Boulder</p>
+  </div>
+  
   <br>
   <br>
 

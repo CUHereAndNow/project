@@ -1,6 +1,6 @@
-drop schema Test;
-create database Test;
-use Test;
+drop schema ProjectDB;
+create database ProjectDB;
+use ProjectDB;
 
 Create table UserProfiles
 (
@@ -21,5 +21,8 @@ Create Table UserTags
     Primary Key (id)
 )
 Character Set utf8 collate utf8_general_ci;
+
+Insert into UserProfiles (Email_Address, Passwords) 
+Values("localUser@google", "test");
 
 
