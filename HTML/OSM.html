@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://openlayers.org/en/v4.6.4/css/ol.css" type="text/css">
+        <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+        <script src="https://openlayers.org/en/v4.6.4/build/ol.js"></script>
+
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+        <title>Here and Now Resources</title>
+        <link rel="stylesheet" href="style.css">
+        <div class="container">
+            <img src="http://i65.tinypic.com/16hoqhl.png" border="0" alt="Image and video hosting by TinyPic" style="width: 100%"></a>
+            <h1><span>Welcome to the Resource Center!<span class = 'spacer'></span></h1>
+        </div>
+        <br>
+        <br>
+        <style>
+         .ol-popup {
+             position: absolute;
+             background-color: white;
+             -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+             filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+             padding: 15px;
+             border-radius: 10px;
+             border: 1px solid #cccccc;
+             bottom: 12px;
+             left: -50px;
+             min-width: 280px;
+         }
+         .ol-popup:after, .ol-popup:before {
+             top: 100%;
+             border: solid transparent;
+             content: " ";
+             height: 0;
+             width: 0;
+             position: absolute;
+             pointer-events: none;
+         }
+         .ol-popup:after {
+             border-top-color: white;
+             border-width: 10px;
+             left: 48px;
+             margin-left: -10px;
+         }
+         .ol-popup:before {
+             border-top-color: #cccccc;
+             border-width: 11px;
+             left: 48px;
+             margin-left: -11px;
+         }
+         .ol-popup-closer {
+             text-decoration: none;
+             position: absolute;
+             top: 2px;
+             right: 8px;
+         }
+         .ol-popup-closer:after {
+             content: "✖";
+         }
+
+         a.skiplink {
+             position: absolute;
+             clip: rect(1px, 1px, 1px, 1px);
+             padding: 0;
+             border: 0;
+             height: 1px;
+             width: 1px;
+             overflow: hidden;
+         }
+         a.skiplink:focus {
+             clip: auto;
+             height: auto;
+             width: auto;
+             background-color: #fff;
+             padding: 0.3em;
+         }
+         #map:focus {
+             outline: #4A74A8 solid 0.15em;
+         }
+        </style>
+    </head>
+
+    <body style="background:#565A5C; background: gray;">
+        <p align="center" style="color: white;">
+            <button type="button" class="btn btn-default one" style="float: auto;">Aden Hall</button>
+            <button type="button" class="btn btn-default two" style="float: auto;">Crossman Hall</button>
+            <button type="button" class="btn btn-default three" style="float: auto;">Brackett Hall</button>
+            <button type="button" class="btn btn-default four" style="float: auto;">Cockerell Hall</button>
+            <button type="button" class="btn btn-default five" style="float: auto;">Farrand Hall</button>
+            <button type="button" class="btn btn-default six" style="float: auto;">Hallet Hall</button>
+
+        </p>
+
+        <br>
+        <br>
+        <a class="skiplink" href="#map">Go to map</a>
+        <div class="container" >
+            <div id="map" class="map" tabindex="0"></div>
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script>
+
+         /**
+          * Elements that make up the popup.
+          */
+         var container = document.getElementById('popup');
+         var content = document.getElementById('popup-content');
+         var closer = document.getElementById('popup-closer');
+
+
+         /**
+          * Create an overlay to anchor the popup to the map.
+          */
+         var overlay = new ol.Overlay({
+             element: container,
+             autoPan: true,
+             autoPanAnimation: {
+                 duration: 250
+             }
+         });
+
+
+         /**
+          * Add a click handler to hide the popup.
+          * @return {boolean} Don't follow the href.
+          */
+         closer.onclick = function() {
+             overlay.setPosition(undefined);
+             closer.blur();
+             return false;
+         };
+
+         var LonLatCoordCU = [-105.2673, 40.0074];
+         var MercCoordCU = ol.proj.fromLonLat(LonLatCoordCU);
+
+         var map = new ol.Map({
+             layers: [
+                 new ol.layer.Tile({
+                     source: new ol.source.OSM(),
+                     preload: 16
+                 })
+             ],
+             overlays: [overlay],
+             target: 'map',
+             view: new ol.View({
+                 center: MercCoordCU,
+                 zoom: 16
+             })
+         });
+
+         /* This breaks the popup due to click event (most likely) & the buttons are on the map itself.
+          * TODO: Figure out if this is needed.
+          * document.getElementById('zoom-out').onclick = function() {
+          *     var view = map.getView();
+          *     var zoom = view.getZoom();
+          *     view.setZoom(zoom - 1);
+          * };
+
+          * document.getElementById('zoom-in').onclick = function() {
+          *     var view = map.getView();
+          *     var zoom = view.getZoom();
+          *     view.setZoom(zoom + 1);
+          * };
+          */
+         map.on('singleclick', function(evt) {
+             var coordinate = evt.coordinate;
+             var hdms = ol.coordinate.toStringHDMS(ol.proj.transform(
+                 coordinate, 'EPSG:3857', 'EPSG:4326'));
+             content.innerHTML = '<p>You clicked here:</p><code>' + hdms +
+                                 '</code>';
+             overlay.setPosition(coordinate);
+         });
+
+        </script>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+    </body>
+
+</html>
