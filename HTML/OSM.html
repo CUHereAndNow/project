@@ -138,18 +138,21 @@
              return false;
          };
 
+         var LonLatCoordCU = [-105.2673, 40.0074];
+         var MercCoordCU = ol.proj.fromLonLat(LonLatCoordCU);
+
          var map = new ol.Map({
              layers: [
                  new ol.layer.Tile({
                      source: new ol.source.OSM(),
-                     preload: 3
+                     preload: 16
                  })
              ],
              overlays: [overlay],
              target: 'map',
              view: new ol.View({
-                 center: [0, 0],
-                 zoom: 2
+                 center: MercCoordCU,
+                 zoom: 16
              })
          });
 
