@@ -115,7 +115,6 @@
          var content = document.getElementById('popup-content');
          var closer = document.getElementById('popup-closer');
 
-
          /**
           * Create an overlay to anchor the popup to the map.
           */
@@ -127,7 +126,6 @@
              }
          });
 
-
          /**
           * Add a click handler to hide the popup.
           * @return {boolean} Don't follow the href.
@@ -138,21 +136,36 @@
              return false;
          };
 
-         var LonLatCoordCU = [-105.2673, 40.0074];
-         var MercCoordCU = ol.proj.fromLonLat(LonLatCoordCU);
+         var serverip = '128.138.59.144';
+
+         var tileserver = new ol.layer.Tile({
+             source: new ol.source.OSM({
+                 attributions: [
+                     ol.source.OSM.ATTRIBUTION
+                 ],
+                 crossOrigin: null,
+                 url: 'http://' + serverip + '/hot/{z}/{x}/{y}.png'
+             })
+         });
+
+         //var LonLatCoordCU = [-105.2673, 40.0074];
+         //var MercCoordCU = ol.proj.fromLonLat(LonLatCoordCU);
 
          var map = new ol.Map({
              layers: [
-                 new ol.layer.Tile({
-                     source: new ol.source.OSM(),
-                     preload: 16
-                 })
+                 // new ol.layer.Tile({
+                    // source: new ol.source.OSM(),
+                    // preload: 16
+                 // })
+                 tileserver
              ],
              overlays: [overlay],
              target: 'map',
              view: new ol.View({
-                 center: MercCoordCU,
-                 zoom: 16
+                 center: [0, 0],
+                 zoom: 0
+                // center: MercCoordCU,
+                // zoom: 16
              })
          });
 
