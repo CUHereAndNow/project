@@ -1,0 +1,18 @@
+X,Y,id,osm_id,z_order,sport,name,name:en,access,covered,ref,leisure
+,,8755,-4292872,0,american_football,Folsom Field,,,,,stadium
+,,89564,46275951,0,multi,Student Recreation Center,,,,,sports_centre
+,,89716,46371964,0,soccer,Franklin Field,,,,,pitch
+,,210358,116030890,0,tennis,,,,,,pitch
+,,210359,116030892,0,tennis,,,,,,pitch
+,,210361,116030895,0,tennis,,,,,,pitch
+,,210364,116030907,0,tennis,,,,,,pitch
+,,376593,177619603,0,basketball,,,,,,pitch
+,,420962,194217258,0,volleyball,,,,,,pitch
+,,473095,215667609,0,beachvolleyball,,,,,,pitch
+,,935310,408750269,0,tennis,Tennis Courts,,,,,pitch
+,,210360,116030893,0,tennis,,,,,,pitch
+,,210362,116030896,0,tennis,,,,,,pitch
+,,210363,116030899,0,tennis,,,,,,pitch
+,,349715,168647812,0,soccer,Kittredge Field,,,,,pitch
+,,349714,168647811,0,american_football,Kittredge Field,,,,,pitch
+,,455241,206772029,0,american_football,Folsom Field,,,,,pitch

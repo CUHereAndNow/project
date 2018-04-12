@@ -1,0 +1,4 @@
+id,osm_id,z_order,waterway,name,name:en,water,culvert,harbour,intermittent,layer,lock,tunnel,width
+7300945,194217260,0,drain,,,,,,,,,,
+2424118,61758946,0,stream,Boulder Creek,,,,,,,,,
+13799239,522744292,0,ditch,Anderson Ditch,,,,,,,,partially_culvert,

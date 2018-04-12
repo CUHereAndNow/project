@@ -1,0 +1,8 @@
+id,osm_id,z_order,office,name,name:en,building,addr:housenumber,addr:housename,addr:street,addr:city,addr:state,addr:postcode,addr:place,addr:country,addr:hamlet,addr:suburb,addr:subdistrict,addr:district,addr:province,website,contact:website,phone,contact:phone,opening_hours,brand
+3956,28827229,0,educational_institution,Regent Administrative Building,,office,2055,,Regent Drive,Boulder,,,,,,,,,,,,,,,
+6341,46371926,0,educational_institution,University Admin Center,,office,924,,Broadway,Boulder,,,,,,,,,,,,,,,
+10707,81175983,0,educational_institution,Center for Community,,yes,2249,,Willard Loop Drive,Boulder,,,,,,,,,,,,,,,
+21370,149825386,0,educational_institution,The Learning Center,,yes,1045,,18th Street,Boulder,,,,,,,,,,,,,,,
+30759,205668780,0,educational_institution,Office Tower,,office,,,,,,,,,,,,,,,,,,,
+31026,207202686,0,educational_institution,University Admin Center Annex,,office,924,,Broadway,Boulder,,,,,,,,,,,,,,,
+142959,-2762971,0,educational_institution,Administration Wing,,office,,,,,,,,,,,,,,,,,,,

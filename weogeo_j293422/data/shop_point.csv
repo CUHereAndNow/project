@@ -1,0 +1,6 @@
+X,Y,id,osm_id,z_order,shop,building,name,name:en,addr:housenumber,addr:housename,addr:street,addr:city,addr:state,addr:postcode,addr:place,addr:country,addr:hamlet,addr:suburb,addr:subdistrict,addr:district,addr:province,website,contact:website,phone,contact:phone,opening_hours,brand
+-105.275511910295776,40.007188921479326,875320,2704305236,0,optician,,College Optical,,1350,,College Avenue,,,,,,,,,,,http://www.collegeopticalboulder.com/,,,(303)444-3092,"Mo-Fr 09:00-18:00; Sa 09:00-16:00",
+-105.26598897864325,40.005826359299448,646591,2177939680,0,convenience,,The Emporium,,,,,,,,,,,,,,,,,,,"Mo-Fr 7:30-24:00; Sa-Su 8:00-24:00",
+-105.275367154827961,40.007193196249943,875321,2704307608,0,hairdresser,,Silver and Gold Haircuts,,1350,,College Avenue,,,,,,,,,,,http://www.silverandgoldbarbers.com/,,,,"Mo-Fr 08:00-18:00; Sa 08:00-17:00; Su 13:00-16:30",
+-105.275173951959815,40.006960933713032,875322,2704307613,0,beauty,,Aspen Tan,,,,,,,,,,,,,,,,,,,,
+-105.263737431812771,40.009333682863371,2376591,5264738653,0,religion,,Wesley Felloship & Community Centre,,1290,,Folsom Street,,,,,,,,,,,,,,,,
