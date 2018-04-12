@@ -4,6 +4,8 @@ var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
 
+app.set('view engine', 'ejs')
+
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
@@ -17,7 +19,7 @@ app.get('/style.css',function(req, res){
 
 //website layout 
 app.get('/', function (req,res) {
-		res.sendFile(path.join(__dirname + '/Website.html'));
+		res.sendFile(path.join(__dirname + '/Website.ejs'));
 	});
 
 
@@ -45,15 +47,9 @@ app.get('/LoginForm.css',function(req, res){
 //Login website
 app.get("/Login_Get", function(req, res){
 	res.sendFile(path.join(__dirname + '/LoginForm.html'));
-	});
+	});	
 	
-	
-	
-	
-	
-	
-	
-	
+	//Adds user to database
 	
 app.post('/newUser_Post', function(req, res) {
 	 name = req.body.uname;
@@ -86,27 +82,35 @@ app.post('/newUser_Post', function(req, res) {
 			if(row && row.length )
 			{
 				console.log("same email");
-				return res.redirect('/');
-				//res.send("same email");
-			}
+				 res.redirect('/');			}
 			else
 			{
 				//If it doest not exist it adds it to the database here.
-				//console.log("not the same");
 
 				con.query("Insert into UserProfiles (`Email_Address` , `Passwords`) Values ('" + name +  "','" + pass + "');", function (err, result) {
 					if (err) throw err;
 					console.log("1 record inserted");
-					res.redirect('/');
-					//res.send("1 record inserted");
+				});
+/*
+				con.query("Insert into UserTags (`Email_Address`) Values ('" + name +  "');", function (err, result) {
+					if (err) throw err;
+					console.log ("1 recrod inserted into tags");
+					res.redirect('/')
+					
 					
 				});
+				* */
 		
 			}
 			
 		}
 	});
 })
+
+app.post("/newUser_Post/Cancel", function(req , res) {
+	res.redirect('/');
+})	
+
 
 
 app.post('/login_Post',function(req, res){
@@ -157,6 +161,6 @@ app.post('/login_Post',function(req, res){
 
 
 // This code leaves the web server running
-var server = app.listen(8080, function () {
-	console.log("Webserver listening at http://localhost:8080") ;
+var server = app.listen(8000, function () {
+	console.log("Webserver listening at http://localhost:8000") ;
 })
