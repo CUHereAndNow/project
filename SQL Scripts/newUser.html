@@ -5,18 +5,18 @@
 		<link rel="stylesheet" href="newUser.css">
 	</head>
 	
-	<body>
+	<body style="background:#565A5C;">
 
-		<h2 align= "center">New User</h2>
+		<h2 align= "center" style="color: white;">New User</h2>
 		<form action = "http://127.0.0.1:8080/newUser_Post" method = "post">
 			<div class="container">			
-				<label for="uname"><b>Enter Email Address</b></label>
+				<label for="uname" style="color: white;"><b>Enter Email Address</b></label>
 				<input type="text" placeholder="Enter Email Address" id = "uname" name="uname" required>
 				
-				<label for="psw"><b>New Password</b></label>
+				<label for="psw" style="color: white;"><b>New Password</b></label>
 				<input type="password" placeholder="Enter Password" name="psw" required>
 		
-				<button type = "submit" id="Submit" value = "Submit" class="submit">Submit</button>
+				<button type = "submit" id="Submit" value = "Submit" class="submit" style="background-color: #CFB87C; color: white;">Submit</button>
 				<button type ="button" name="Cancel" onclick = "location.href = '/';" class ="cancelbtn"> Cancel </button>
 				
 			</div>
