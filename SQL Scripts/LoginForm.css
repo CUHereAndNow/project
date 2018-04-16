@@ -1,8 +1,5 @@
  /* Bordered form */
  body {font-family: Arial, Helvetica, sans-serif;}
-form {
-    border: 3px solid #f1f1f1;
-}
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
@@ -16,7 +13,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-    background-color: gray;
+    background-color: #CFB87C;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -34,7 +31,7 @@ button:hover {
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
-    background-color: #f44336;
+    background-color: #CFB87C;
 }
 
 /* Add padding to containers */
