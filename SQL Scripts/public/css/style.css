@@ -139,18 +139,13 @@ color: black;
   border: none;
 
 }
-.Logout {
-    background-color: #CFB87C;
-    border: none;
-    color: white;
-    padding: 5px 5px;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 4px;
-    position: static; 
-    float: right;
-    margin-right: -100px; 
-    margin-top: -88px;
+
+
+.Logout:hover {
+background-color: white;
+color: black; 
 
 }
+
+
 

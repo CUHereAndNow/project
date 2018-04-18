@@ -6,14 +6,14 @@
 		<link rel="stylesheet" href="css/LoginForm.css">
 	</head>
 	
-	<body>
-		<h2 align="center">Login</h2>
+	<body style="background-color: gray;">
+		<h2 align="center" style="color: white;">Login</h2>
 		<form action="http://127.0.0.1:8000/login_Post" method = "post">
 			<div class="container">
-				<label for="uname"><b>Email Address</b></label>
+				<label for="uname" style="color: white;"><b>Email Address</b></label>
 				<input type="text" placeholder="Enter Username" name="uname" required>
 
-				<label for="psw"><b>Password</b></label>
+				<label for="psw" style="color: white;"><b>Password</b></label>
 				<input type="password" placeholder="Enter Password" name="psw" required>
 
 				<button type = "submit" id="Submit" value = "Submit" class="submit">Submit</button>

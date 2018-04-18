@@ -77,6 +77,11 @@ app.get("/Login_Get", function(req, res){
 app.get("/NewUser", function(req, res) {
 	res.render('pages/newUser');
 })
+app.get("/Logout", function(req, res) {
+	res.render('pages/index', {
+		test: 'None'
+	});
+});
 
 
 app.use('/', index)
