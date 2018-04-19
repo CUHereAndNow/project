@@ -9,20 +9,27 @@
 
 <title>Resource Center</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-
 <div class="container">
-<img src="http://i65.tinypic.com/16hoqhl.png" border="0" alt="Image and video hosting by TinyPic" style="width: 100%"></a>
- <div class="centered"><h1><b>Welcome to the Resource Center!</b></h1>
-	
-	<% include headL %>
-	
-	<form action = "http://127.0.0.1:8000/NewUser" method = "Get">
-		<button class="button2 newUser" name="SignUp">Sign Up</button>
-	</form>
-	
-	
- </div>
- 
+	<img src="http://i65.tinypic.com/16hoqhl.png" border="0" alt="Image and video hosting by TinyPic" style="width: 100%"></a>
+	<div class="centeredTitle">
+		<h1><b>Welcome to the Resource Center!</b></h1>
+		
+		<div class = "Name">
+		<% include UserN %>
+		</div>
+		
+		<div class = "headL"> 
+			<% include headL %>
+		</div>
+		
+
+		
+		<div class "newUser>
+			<form action = "http://127.0.0.1:8000/NewUser" method = "Get">
+				<button class="button2 newUser" name="SignUp">Sign Up</button>
+			</form>	
+		</div>
+	</div>
 </div>
 <br>
 <br>
