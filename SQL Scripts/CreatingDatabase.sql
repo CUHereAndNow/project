@@ -17,6 +17,7 @@ Create Table UserTags
 (
 	id int(10) unsigned NOT NULL auto_increment,
 	Email_Address varchar(100) NOT NULL,
+    Hall varchar(15) NULL,
     Tags varChar(500)  NULL,
     Primary Key (id)
 )

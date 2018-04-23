@@ -45,8 +45,12 @@ app.post('/login_Post', function(req, res)
 				{
 					//I want to return the username back to the original html form here. this just means it exists
 					console.log("Email Found");
+					console.log(test)
+					test = name;
+					console.log("User is");
+					console.log(test)
 					res.render('pages/index', {
-						test: name
+						test
 						});
 				}
 				else

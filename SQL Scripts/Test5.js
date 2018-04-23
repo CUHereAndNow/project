@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var mysql = require('mysql')
 var myConnection = require('express-myconnection')
+global.test  = "None";
 
 var config = require('./config')
 var dbOptions = {
@@ -9,7 +10,7 @@ var dbOptions = {
  user: config.database.user,
  password: config.database.password,
  port: config.database.port,
- database: config.database.db
+ database: config.database.db,
 }
 
 
@@ -59,11 +60,13 @@ app.use(session({
  cookie: { maxAge: 60000 }
 }))
 
+
+
 //index page 
 app.get('/', function(req, res) {
 
 	   res.render('pages/index', {
-		   test: 'None'
+		   test
 		   });
     
 });
@@ -78,10 +81,41 @@ app.get("/NewUser", function(req, res) {
 	res.render('pages/newUser');
 })
 app.get("/Logout", function(req, res) {
+	test = "None"
 	res.render('pages/index', {
-		test: 'None'
+		test
 	});
 });
+
+
+
+//Updating database tags
+app.post('/Model', function (req, res) {
+	req.getConnection(function(error, conn) {
+		var hall = req.body.HALL
+		console.log(hall)
+		var Tag = req.body.TAGG
+		
+		
+		 
+		conn.query("Update UserTags SET Tags = '" + Tag + "' where Email_Address = '" + test +"';", function (err, result) {
+			if (err) throw err;
+			console.log(Tag);
+			console.log("User")
+			console.log(test);
+			console.log("Tag Updated");
+			conn.query("Update UserTags SET Hall = '" + hall + "' where Email_Address = '" + test +"';");
+			res.render('pages/index' , {
+				test: test
+				});
+
+			
+		});			
+	});
+	
+});
+
+
 
 
 app.use('/', index)

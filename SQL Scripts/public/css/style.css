@@ -5,6 +5,46 @@ height: auto;
 
 
 }
+
+/* layout for Login and Logout buttons */
+.button {
+    background-color: #CFB87C;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    position: static; 
+    float: right;
+    margin-right: -210px; 
+    margin-top: -100px;
+
+}
+/* New user Button layout */
+.button2 {
+    background-color: #CFB87C;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    position: static; 
+    float: right;
+    margin-top: -100px;
+    margin-right: -280px; 
+   
+}
+
+/* Hover for the Log out button */
+.Logout:hover {
+background-color: white;
+color: black; 
+
+}
+
+
 /* this does hover for Login button */
 .Login:hover {
 background-color: white;
@@ -16,24 +56,6 @@ color: black;
 background-color: white;
 color: black; 
 }
-/* Hover for Hall buttons */ 
-.one:hover {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #CFB87C;
-}
-
-/* Hover for the Log out button */
-.Logout:hover {
-background-color: white;
-color: black; 
-
-}
-.two:hover {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #CFB87C;
-}
 /* hall buttons */
 .one {
     background-color: #CFB87C;
@@ -44,6 +66,14 @@ color: black;
     cursor: pointer;
     display: inline-block;
 }
+
+/* Hover for Hall buttons */ 
+.one:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #CFB87C;
+}
+
 /* Tag Buton */
 .two {
     background-color: #CFB87C;
@@ -55,6 +85,28 @@ color: black;
     display: inline-block;
 
 }
+.two:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #CFB87C;
+}
+
+/* Tag Button stuff */
+.three {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+.three:hover{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #CFB87C;
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -74,7 +126,7 @@ color: black;
     left: 0;
     width: 100%;
 }
-/* This is for the Title */
+/* This is for the picture on the website and all the buttons in it */
 .centeredTitle {
     position: absolute;
     top: 50%;
@@ -128,36 +180,7 @@ color: black;
 .container1 {
     align-content: center;
 }
-/* layout for Login and Logout buttons */
-.button {
-    background-color: #CFB87C;
-    border: none;
-    color: white;
-    padding: 5px 5px;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 4px;
-    position: static; 
-    float: right;
-    margin-right: -210px; 
-    margin-top: -100px;
 
-}
-/* New user Button layout */
-.button2 {
-    background-color: #CFB87C;
-    border: none;
-    color: white;
-    padding: 5px 5px;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 4px;
-    position: static; 
-    float: right;
-    margin-top: -100px;
-    margin-right: -280px; 
-   
-}
 
 /*Username button style when logged in*/
 .userName {
@@ -189,6 +212,139 @@ color: black;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+}
+
+
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=text] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+width: auto;
+padding: 10px 18px;
+background-color: gray;
+}
+
+/* Center the image and position the close button */
+
+.imgcontainer {
+text-align: center;
+margin: 24px 0 12px 0;
+position: relative;
+}
+
+.container {
+padding: 16px;
+}
+
+span.psw {
+float: right;
+padding-top: 16px;
+}
+
+/* The Modal (background) */
+
+.modal {
+display: none;
+/* Hidden by default */
+position: fixed;
+/* Stay in place */
+z-index: 1;
+/* Sit on top */
+left: 0;
+top: 0;
+width: 100%;
+/* Full width */
+height: 100%;
+/* Full height */
+overflow: auto;
+/* Enable scroll if needed */
+background-color: rgb(0, 0, 0);
+/* Fallback color */
+background-color: rgba(0, 0, 0, 0.4);
+/* Black w/ opacity */
+padding-top: 60px;
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+background-color: #CFB87C;
+margin: 5% auto 15% auto;
+/* 5% from the top, 15% from the bottom and centered */
+border: 1px solid #888;
+width: 80%;
+/* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+
+.close {
+position: absolute;
+right: 25px;
+top: 0;
+color: #000;
+font-size: 35px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: gray;
+cursor: pointer;
+}
+
+/* Add Zoom Animation */
+
+.animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {
+-webkit-transform: scale(0)
+}
+to {
+-webkit-transform: scale(1)
+}
+}
+
+@keyframes animatezoom {
+from {
+transform: scale(0)
+}
+to {
+transform: scale(1)
+}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 300px) {
+span.psw {
+display: block;
+float: none;
+}
+.cancelbtn {
+width: 100%;
+}
 }
 
 
