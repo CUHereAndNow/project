@@ -137,6 +137,7 @@
          };
 
          var serverip = '128.138.59.144';
+         //TODO: Put this behind some DDNS/static address
 
          var tileserver = new ol.layer.Tile({
              source: new ol.source.OSM({
@@ -148,8 +149,20 @@
              })
          });
 
-         //var LonLatCoordCU = [-105.2673, 40.0074];
-         //var MercCoordCU = ol.proj.fromLonLat(LonLatCoordCU);
+         var buildingLayer = new ol.layer.Vector({
+             source: new ol.source.Vector({
+                 crossOrigin: null,
+                 url: 'http://' + serverip + '/building_polygon.json',
+                 format: new ol.format.GeoJSON({
+                     projection: 'EPSG:3857'
+                 }),
+             })
+         });
+
+         var LonLatCoordCU = [-105.2673, 40.0074];
+         var MercCoordCU = ol.proj.fromLonLat(LonLatCoordCU); //Default is EPSG:3857
+         var BoundingBox = ol.extent.boundingExtent([MercCoordCU, MercCoordCU-20]);
+         console.debug(BoundingBox);
 
          var map = new ol.Map({
              layers: [
@@ -157,15 +170,20 @@
                     // source: new ol.source.OSM(),
                     // preload: 16
                  // })
-                 tileserver
+                 tileserver,
+                 buildingLayer
              ],
              overlays: [overlay],
              target: 'map',
              view: new ol.View({
-                 center: [0, 0],
-                 zoom: 0
-                // center: MercCoordCU,
-                // zoom: 16
+                 //center: [0, 0],
+                 //zoom: 0
+                 //extent: BoundingBox,
+                 //extent: [ -11718398.233182767, 4866650.685612886, -11718312.233182767, 4867030.685612886 ],
+                 //TODO: Can a boundingbox be made in the current version of openlayers?  Right now there is a bug that when you zoom in the bounding box changes.
+                 center: MercCoordCU,
+                 minZoom: 16,
+                 zoom: 16
              })
          });
 
