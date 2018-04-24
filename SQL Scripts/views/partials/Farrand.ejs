@@ -1,1 +1,11 @@
 
+
+<% if (data) { %>
+<% data.forEach(function(item){ %>
+	<% if(item.Hall === 'Farrand') { %>
+		<ul><%= item.Email_Address %> : <%= item.Tags %> </ul>
+		<% } %>
+ <% }) %>
+ <% } %> 
+	 
+

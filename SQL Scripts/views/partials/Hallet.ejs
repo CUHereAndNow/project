@@ -1,1 +1,10 @@
 
+<% if (data) { %>
+<% data.forEach(function(item){ %>
+	<% if(item.Hall === 'Hallett') { %>
+		<ul><%= item.Email_Address %> : <%= item.Tags %> </ul>
+		<% } %>
+ <% }) %>
+ <% } %> 
+	 
+

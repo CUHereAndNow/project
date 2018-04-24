@@ -3,6 +3,7 @@ var app = express();
 var mysql = require('mysql')
 var myConnection = require('express-myconnection')
 global.test  = "None";
+global.data;
 
 var config = require('./config')
 var dbOptions = {
@@ -23,6 +24,7 @@ app.set('view engine', 'ejs');
 var index = require('./routes/index')
 var Login = require('./routes/Login')
 var newUser = require('./routes/newUser')
+var ADEN = require('./routes/ADEN')
 
 var expressValidator = require('express-validator')
 app.use(expressValidator())
@@ -64,10 +66,18 @@ app.use(session({
 
 //index page 
 app.get('/', function(req, res) {
-
-	   res.render('pages/index', {
-		   test
-		   });
+	req.getConnection(function(error, conn) {
+	var sqlQuery = 'select * from UserTags;';
+	
+	conn.query(sqlQuery, function(err, rows, fields) {
+		if (err) throw err		
+		data = rows
+		res.render('pages/index', {
+		test,
+		data
+   });
+})
+})
     
 });
 
@@ -87,34 +97,27 @@ app.get("/Logout", function(req, res) {
 	});
 });
 
-
-
 //Updating database tags
 app.post('/Model', function (req, res) {
 	req.getConnection(function(error, conn) {
 		var hall = req.body.HALL
 		console.log(hall)
 		var Tag = req.body.TAGG
-		
-		
-		 
-		conn.query("Update UserTags SET Tags = '" + Tag + "' where Email_Address = '" + test +"';", function (err, result) {
-			if (err) throw err;
-			console.log(Tag);
-			console.log("User")
-			console.log(test);
-			console.log("Tag Updated");
-			conn.query("Update UserTags SET Hall = '" + hall + "' where Email_Address = '" + test +"';");
-			res.render('pages/index' , {
-				test: test
-				});
+		conn.query("Update UserTags SET Tags = '" + Tag + "' where Email_Address = '" + test +"';");
+		conn.query("Update UserTags SET Hall = '" + hall + "' where Email_Address = '" + test +"';");
 
-			
-		});			
-	});
+		var sqlQuery = 'select * from UserTags;';
+		conn.query(sqlQuery, function(err, rows, fields) {
+			if (err) throw err		
+			data = rows
+			res.render('pages/index', {
+				test,
+				data
+			});
+	})
 	
-});
-
+})
+})
 
 
 
@@ -123,6 +126,7 @@ app.use('/', index)
 //different code for each
 app.use('/' , Login )
 app.use('/', newUser)
+app.use('/', ADEN)
 
 var hostName = config.server.host;
 var serverPort = config.server.port;
@@ -131,4 +135,3 @@ app.listen(serverPort, function(){
  console.log('Server running at port ' + serverPort + ': http://' + hostName + ': '
 + serverPort)
 })
-
