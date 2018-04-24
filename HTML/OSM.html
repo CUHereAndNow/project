@@ -136,9 +136,10 @@
              return false;
          };
 
-         var serverip = 'cuhereandnow.pagekite.me';
-         //TODO: Put this behind some DDNS/static address
+         //var serverip = 'cuhereandnow.pagekite.me';
+         var serverip = '128.138.59.144';
 
+         //OSM base map layer from render server
          var tileserver = new ol.layer.Tile({
              source: new ol.source.OSM({
                  attributions: [
@@ -149,6 +150,7 @@
              })
          });
 
+         //GeoJSON building polygon layer
          var buildingLayer = new ol.layer.Vector({
              source: new ol.source.Vector({
                  crossOrigin: null,
@@ -162,7 +164,7 @@
          var LonLatCoordCU = [-105.2673, 40.0074];
          var MercCoordCU = ol.proj.fromLonLat(LonLatCoordCU); //Default is EPSG:3857
          var BoundingBox = ol.extent.boundingExtent([MercCoordCU, MercCoordCU-20]);
-         console.debug(BoundingBox);
+         //console.debug(BoundingBox);
 
          var map = new ol.Map({
              layers: [
@@ -187,27 +189,22 @@
              })
          });
 
-         /* This breaks the popup due to click event (most likely) & the buttons are on the map itself.
-          * TODO: Figure out if this is needed.
-          * document.getElementById('zoom-out').onclick = function() {
-          *     var view = map.getView();
-          *     var zoom = view.getZoom();
-          *     view.setZoom(zoom - 1);
-          * };
+         map.on('click', function(e) {
+             map.forEachFeatureAtPixel(e.pixel, function(feature, layer) {
+                 console.log("Click Event!");
+                 console.log(e);
+                 console.log(feature);
+                 console.log(feature.N.name);
+                 console.log(layer);
 
-          * document.getElementById('zoom-in').onclick = function() {
-          *     var view = map.getView();
-          *     var zoom = view.getZoom();
-          *     view.setZoom(zoom + 1);
-          * };
-          */
-         map.on('singleclick', function(evt) {
-             var coordinate = evt.coordinate;
-             var hdms = ol.coordinate.toStringHDMS(ol.proj.transform(
-                 coordinate, 'EPSG:3857', 'EPSG:4326'));
-             content.innerHTML = '<p>You clicked here:</p><code>' + hdms +
-                                 '</code>';
-             overlay.setPosition(coordinate);
+                 var coordinate = e.coordinate;
+                 var hdms = ol.coordinate.toStringHDMS(ol.proj.transform(
+                     coordinate, 'EPSG:3857', 'EPSG:4326'));
+                 content.innerHTML = '<p>You clicked here:</p><code>' + hdms +
+                                     '<br>' + feature.N.name +
+                                     '</code>';
+                 overlay.setPosition(coordinate);
+             })
          });
 
         </script>
