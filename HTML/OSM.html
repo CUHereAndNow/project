@@ -154,7 +154,8 @@
          var buildingLayer = new ol.layer.Vector({
              source: new ol.source.Vector({
                  crossOrigin: null,
-                 url: 'http://' + serverip + '/building_polygon.json',
+                 //url: 'http://' + serverip + '/building_polygon.json',
+                 url: 'building_polygon.json',
                  format: new ol.format.GeoJSON({
                      projection: 'EPSG:3857'
                  }),
