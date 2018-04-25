@@ -13,7 +13,72 @@
 
 <body style="background:#565A5C; background: gray;">
 	
-        <% include ../partials/allHalls %>
+ 
+ <div class="conatiner1">
+      <button class="btn btn-default one" title="Computers, Whiteboards..." onclick="myFunction()">Aden Hall (A)</button>
+      <div id="Aden" class="dropdown-content">
+        <ul>8 Computers</ul>
+        <ul>Whiteboards</ul>
+        <ul>1 Printer</ul>
+        <ul>Vending Machine</ul>
+        <ul>3 Study Rooms</ul>
+        <ul>Public Phone</ul>
+        <ul>Chalkboards</ul>
+        <ul>Water Bottle Station</ul>
+        <ul>TV, Pool, Ping Pong Table</ul>
+		<% include ../partials/Aden %>
+      </div>
+
+      <button class="btn btn-default one" title="Study Room..." onclick="myFunction2()">Crossman Hall (B)</button>
+      <div id="Crosman" class="dropdown-content">
+        <ul>1 Study Room</ul>
+        <ul>Pool Table</ul>
+        <% include ../partials/CrossMan %>
+      </div>
+
+      <button class="btn btn-default one" title="Study Rooms, Chalkboards..." onclick="myFunction3()">Brackett Hall (C)</button>
+      <div id="Brackett" class="dropdown-content">
+        <ul>Whiteboards</ul>
+        <ul>2 Study Rooms</ul>
+        <ul>Chalkboards</ul>
+        <ul>Piano</ul>
+        <ul>Waterbottle Station</ul>
+		<% include ../partials/Brackett %>
+      </div>
+
+      <button class="btn btn-default one" title="Study Room..." onclick="myFunction4()">Cockerell Hall (D)</button>
+      <div id="Cockerell" class="dropdown-content">
+        <ul>Whiteboards</ul>
+		<% include ../partials/Cockerell %>
+      </div>
+
+      <button class="btn btn-default one" title="Whiteboards, Study Rooms..." onclick="myFunction5()">Farrand Hall (E)</button>
+      <div id="Farrand" class="dropdown-content">
+        <ul>Whiteboards</ul>
+        <ul>5 Study Rooms</ul>
+        <ul>TV</ul>
+        <ul>Water Bottle Station, 8 Individual, 2 Each Floor</ul>
+        <ul>Classroom</ul>
+		<% include ../partials/Farrand %>
+      </div>
+
+      <button class="btn btn-default one" title="Whiteboards, Vending Machine..." onclick="myFunction6()">Hallet Hall (F)</button>
+      <div id="Hallet" class="dropdown-content">
+        <ul>Whiteboards</ul>
+        <ul>3 Study Rooms</ul>
+        <ul>Vending Machine</ul>
+        <ul>Public Phone</ul>
+        <ul>Ping Pong Table</ul>
+        <ul>TV</ul>
+        <ul>Ball Pit</ul>
+        <ul>Pool Table</ul>
+        <ul>Classroom</ul>
+		<% include ../partials/Hallet %>
+      </div>
+      <% include ../partials/Tags %>
+
+  </div>
+
 	
    
 

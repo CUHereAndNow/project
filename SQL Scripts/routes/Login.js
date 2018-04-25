@@ -10,33 +10,22 @@ app.post('/login_Post', function(req, res)
 		req.getConnection(function(error, conn) 
 		{
 			var name = req.body.uname;
-			
 			var pass = req.body.psw;
-			
-			/*
-			conn.query("Select Decode(Passwords, 'SecretPhase') as Passwords from UserProfiles where Email_Address = '" + name + "' ;", function (err, results, fields) {
+			conn.query("Select Passwords From UserProfiles Where Email_Address ='" + name + "';", function(err , row, result) {
 				if (err) throw err;
 				else
 				{
-					var c = fields.toString();
-					if (c == pass)
-					{
-						console.log("test")
-					}
-					else
-					{
-						console.log("fail")
-					}
-					console.log(c);
+					console.log ("Tseadas");
+					console.log(result);
+					console.log(row);
+					console.log(row[1]);
+					console.log(row[2]);
+					console.log(row[3]);
 				}
 			});
-		})
-	*/
-			
-			
-			
-			
-			
+			//console.log(te);
+			//console.log(te.Passwords);
+			//console.log("adsadfsdaf");
 			conn.query("Select Email_Address From UserProfiles Where Email_Address ='" + name + "';", function(err, row) {
 			if (err) throw err;
 			else
