@@ -24,7 +24,6 @@ app.set('view engine', 'ejs');
 var index = require('./routes/index')
 var Login = require('./routes/Login')
 var newUser = require('./routes/newUser')
-var ADEN = require('./routes/ADEN')
 
 var expressValidator = require('express-validator')
 app.use(expressValidator())
@@ -126,7 +125,6 @@ app.use('/', index)
 //different code for each
 app.use('/' , Login )
 app.use('/', newUser)
-app.use('/', ADEN)
 
 var hostName = config.server.host;
 var serverPort = config.server.port;
