@@ -11,18 +11,7 @@ app.post('/login_Post', function(req, res)
 		{
 			var name = req.body.uname;
 			var pass = req.body.psw;
-			conn.query("Select Passwords From UserProfiles Where Email_Address ='" + name + "';", function(err , row, result) {
-				if (err) throw err;
-				else
-				{
-					console.log ("Tseadas");
-					console.log(result);
-					console.log(row);
-					console.log(row[1]);
-					console.log(row[2]);
-					console.log(row[3]);
-				}
-			});
+
 			//console.log(te);
 			//console.log(te.Passwords);
 			//console.log("adsadfsdaf");
@@ -33,15 +22,41 @@ app.post('/login_Post', function(req, res)
 				if(row && row.length )
 				{
 					//I want to return the username back to the original html form here. this just means it exists
-					console.log("Email Found");
-					console.log(test)
-					test = name;
-					console.log("User is");
-					console.log(test)
-					res.render('pages/index', {
-						test
-						});
+					conn.query("Select Passwords From UserProfiles Where Email_Address ='" + name + "';", function(err , row, result) {
+					if (err) throw err;
+					else
+					{
+						/*
+						console.log("testing password from database")
+						console.log (row[0].Passwords)
+						console.log("testing user password")
+						console.log(pass);
+						* */
+						
+						if(row[0].Passwords === pass) {
+							test = name;
+							res.render('pages/index', {
+							test
+							});
+						}
+						else
+						{
+							/*
+							console.log("wrong password")
+							console.log("testing password from database")
+						console.log (row[0].Passwords)
+						console.log("testing user password")
+						console.log(pass);
+						* */
+							//wrong password 
+							res.render('pages/index', {
+							test: "None"
+							});
+						}
+					}
+					});
 				}
+				//Email not found
 				else
 				{
 					//return an error which states "user not found"
