@@ -4,8 +4,82 @@
 <html lang="en">
 
 <head>
+     <link rel="stylesheet" href="https://openlayers.org/en/v4.6.4/css/ol.css" type="text/css">
+   
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <% include ../partials/head %>
+    
+	<!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+	<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+	<script src="https://openlayers.org/en/v4.6.4/build/ol.js"></script>
+   
+    <!-- This stuff is for map style -->
+	<style>
+         .ol-popup {
+             position: absolute;
+             background-color: white;
+             -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+             filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+             padding: 15px;
+             border-radius: 10px;
+             border: 1px solid #cccccc;
+             bottom: 12px;
+             left: -50px;
+             min-width: 280px;
+         }
+         .ol-popup:after, .ol-popup:before {
+             top: 100%;
+             border: solid transparent;
+             content: " ";
+             height: 0;
+             width: 0;
+             position: absolute;
+             pointer-events: none;
+         }
+         .ol-popup:after {
+             border-top-color: white;
+             border-width: 10px;
+             left: 48px;
+             margin-left: -10px;
+         }
+         .ol-popup:before {
+             border-top-color: #cccccc;
+             border-width: 11px;
+             left: 48px;
+             margin-left: -11px;
+         }
+         .ol-popup-closer {
+             text-decoration: none;
+             position: absolute;
+             top: 2px;
+             right: 8px;
+         }
+         .ol-popup-closer:after {
+             content: "✖";
+         }
+
+         a.skiplink {
+             position: absolute;
+             clip: rect(1px, 1px, 1px, 1px);
+             padding: 0;
+             border: 0;
+             height: 1px;
+             width: 1px;
+             overflow: hidden;
+         }
+         a.skiplink:focus {
+             clip: auto;
+             height: auto;
+             width: auto;
+             background-color: #fff;
+             padding: 0.3em;
+         }
+         #map:focus {
+             outline: #4A74A8 solid 0.15em;
+         }
+	</style>
+        
+        
 </head>
 
 <img src="http://i68.tinypic.com/2i1yza0.png" style="max-width: 10%; height:auto; margin-top: -210px" alt="CU Here and Now Logo"></img>
@@ -216,8 +290,130 @@
   <br>
   <br>
 
-  <img src="https://maps.googleapis.com/maps/api/staticmap?center=University+of+Colorado+Boulder,Boulder,CO&zoom=16&size=400x400&markers=color:black%7Clabel:A%7C40.0068094,-105.2653967&markers=color:black%7Clabel:B%7C40.0062758,-105.26477030000001&markers=color:black%7Clabel:C%7C40.0071421,-105.26494430000002&markers=color:black%7Clabel:D%7C40.0067598,-105.26450999999997&markers=color:black%7Clabel:E%7C40.0060083,-105.26577789999999&markers=color:black%7Clabel:F%7C40.0050106,-105.26500440000001&key=AIzaSyDKp2ZQeT-yPM40msTaaxLTEAQEElkVMcM" class="center" style="height:400px; width:400px;"></img>
 
+
+
+
+<!--  This stuff is for the map -->
+	<a class="skiplink" href="#map">Go to map</a>
+	<div class="container" >
+		<div id="map" class="map" tabindex="0">
+		</div>
+		<div id="popup" class="ol-popup">
+			<a href="#" id="popup-closer" class="ol-popup-closer"></a>
+			<div id="popup-content">
+			</div>
+		</div>
+	</div>
+        
+        
+        
+        
+	<script>
+
+         /**
+          * Elements that make up the popup.
+          */
+         var container = document.getElementById('popup');
+         var content = document.getElementById('popup-content');
+         var closer = document.getElementById('popup-closer');
+
+         /**
+          * Create an overlay to anchor the popup to the map.
+          */
+         var overlay = new ol.Overlay({
+             element: container,
+             autoPan: true,
+             autoPanAnimation: {
+                 duration: 250
+             }
+         });
+
+         /**
+          * Add a click handler to hide the popup.
+          * @return {boolean} Don't follow the href.
+          */
+         closer.onclick = function() {
+             overlay.setPosition(undefined);
+             closer.blur();
+             return false;
+         };
+
+         var serverip = 'cuhereandnow.pagekite.me';
+         //var serverip = '128.138.59.144';
+
+         //OSM base map layer from render server
+         var tileserver = new ol.layer.Tile({
+             source: new ol.source.OSM({
+                 attributions: [
+                     ol.source.OSM.ATTRIBUTION
+                 ],
+                 crossOrigin: null,
+                 url: 'http://' + serverip + '/hot/{z}/{x}/{y}.png'
+             })
+         });
+
+         //GeoJSON building polygon layer
+         var buildingLayer = new ol.layer.Vector({
+             source: new ol.source.Vector({
+                 crossOrigin: null,
+                 //url: 'http://' + serverip + '/building_polygon.json',
+                 url: 'building_polygon.json',
+                 format: new ol.format.GeoJSON({
+                     projection: 'EPSG:3857'
+                 }),
+             })
+         });
+
+         var LonLatCoordCU = [-105.2673, 40.0074];
+         var MercCoordCU = ol.proj.fromLonLat(LonLatCoordCU); //Default is EPSG:3857
+         var BoundingBox = ol.extent.boundingExtent([MercCoordCU, MercCoordCU-20]);
+         //console.debug(BoundingBox);
+
+         var map = new ol.Map({
+             layers: [
+                 // new ol.layer.Tile({
+                    // source: new ol.source.OSM(),
+                    // preload: 16
+                 // })
+                 tileserver,
+                 buildingLayer
+             ],
+             overlays: [overlay],
+             target: 'map',
+             view: new ol.View({
+                 //center: [0, 0],
+                 //zoom: 0
+                 //extent: BoundingBox,
+                 //extent: [ -11718398.233182767, 4866650.685612886, -11718312.233182767, 4867030.685612886 ],
+                 //TODO: Can a boundingbox be made in the current version of openlayers?  Right now there is a bug that when you zoom in the bounding box changes.
+                 center: MercCoordCU,
+                 minZoom: 16,
+                 zoom: 16
+             })
+         });
+
+         map.on('click', function(e) {
+             map.forEachFeatureAtPixel(e.pixel, function(feature, layer) {
+                 console.log("Click Event!");
+                 console.log(e);
+                 console.log(feature);
+                 console.log(feature.N.name);
+                 console.log(layer);
+
+                 var coordinate = e.coordinate;
+                 var hdms = ol.coordinate.toStringHDMS(ol.proj.transform(
+                     coordinate, 'EPSG:3857', 'EPSG:4326'));
+                 content.innerHTML = '<p>You clicked here:</p><code>' + hdms +
+                                     '<br>' + feature.N.name +
+                                     '</code>';
+                 overlay.setPosition(coordinate);
+             })
+         });
+
+	</script>
+        
+        <!-- End of MAp Stuff -->
   <br>
   <br>
 
@@ -231,8 +427,8 @@
   <br>
 
   <div class="contact">
-    <p>identikey@colorado.edu</p>
-    <p>Department of Computer Science</p>
+    <p>Miva2659@colorado.edu</p>
+    <p>Computer Science Major</p>
     <p>University of Colorado Boulder</p>
   </div>
   
