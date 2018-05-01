@@ -36,7 +36,10 @@ app.post('/newUser_Post', function(req, res) {
 				if (err) throw err;
 				console.log("1 record inserted");
 				conn.query("Insert Into UserTags (Email_Address) Select Email_Address from UserProfiles where Email_Address = '" + name + "';");
-				res.redirect('/');
+				test = name
+				res.render('pages/index', {
+				test			
+					});
 				//res.send("1 record inserted");
 					
 					});
